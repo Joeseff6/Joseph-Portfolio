@@ -12,6 +12,14 @@ body {
   height: 100%;
 }
 
+#link-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
 #link-menu li {
   list-style: none;
 }
