@@ -93,4 +93,27 @@ body {
   height: 100%;
 }
 
+.section:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+  background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
+  background-size: 400% 400%;
+  color: white;
+  animation: section1-gradient 40s linear infinite;
+}
+
+@keyframes section1-gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
