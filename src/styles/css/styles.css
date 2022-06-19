@@ -15,7 +15,7 @@
 
 #link-menu li {
   list-style: none;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.6rem, 3vw, 3rem);
   letter-spacing: 1.5px;
 }
 
@@ -31,8 +31,8 @@
 .logo-container {
   display: grid;
   place-items: center;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   text-align: center;
   border-radius: 10% 50%;
   background-image: linear-gradient(240deg, hsl(0deg, 100%, 50%), hsl(241deg, 100%, 50%));
@@ -55,7 +55,7 @@
   }
 }
 .logo-text {
-  font-size: 3rem;
+  font-size: 3.6rem;
   margin: 0;
   font-family: "Montserrat", Monospace;
   color: inherit;

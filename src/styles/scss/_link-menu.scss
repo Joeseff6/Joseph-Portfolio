@@ -17,7 +17,7 @@
 
 #link-menu li {
   list-style: none;
-  font-size: clamp(variables.$small-fs, 3vw, variables.$large-fs);
+  font-size: clamp(variables.$small-fs, 3vw, variables.$larger-fs);
   letter-spacing: 1.5px;
 }
 
