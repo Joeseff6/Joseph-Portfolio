@@ -133,5 +133,11 @@ body {
     background-position: 100% 0;
   }
 }
+.hero-img {
+  aspect-ratio: 4/3;
+  width: clamp(30rem, 50%, 40rem);
+  border-radius: 100vmax;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
 
 /*# sourceMappingURL=styles.css.map */
