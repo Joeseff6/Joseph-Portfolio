@@ -11,4 +11,8 @@ body {
   height: 100%;
 }
 
+#link-menu li {
+  list-style: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
