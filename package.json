@@ -1,0 +1,20 @@
+{
+  "name": "joseph-portfolio",
+  "version": "1.0.0",
+  "description": "My professional portfolio with public access",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joeseff6/Joseph-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joeseff6/Joseph-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Joeseff6/Joseph-Portfolio#readme"
+}
