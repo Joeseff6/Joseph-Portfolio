@@ -73,3 +73,30 @@ body {
   border-radius: 100vmax;
   border: 5px solid rgba(255,255,255,0.50);
 }
+
+.dropin-text-container {
+  overflow-y: hidden;
+}
+
+.dropin-text {
+  animation: dropin-text 5s linear infinite;
+}
+
+@keyframes dropin-text {
+  0% {
+    transform: translateY(-100px);
+  }
+  
+  25% {
+    transform: translateY(0);
+  }
+  
+  75% {
+    transform: translateY(0);
+  }
+  
+  100% {
+    transform: translateY(100px);
+  }
+  
+}
