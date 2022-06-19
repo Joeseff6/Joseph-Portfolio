@@ -8,6 +8,7 @@
   right: 0;
   z-index: 99;
   background-color: black;
+  color: white;
   padding: 1rem;
   display: flex;
   gap: 2rem;
@@ -20,6 +21,7 @@
 
 #link-menu a {
   text-decoration: none;
+  color: inherit;
 }
 
 #link-menu a:visited {
@@ -64,5 +66,5 @@
   font-size: calc(variables.$logo-width * 0.6);
   margin: 0;
   font-family: "Montserrat", Monospace;
-  color: white;
+  color: inherit;
 }
