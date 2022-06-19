@@ -1,6 +1,6 @@
 const fullPage = new fullpage("#fullpage-wrapper", {
   licenseKey: "gplv3-license",
-  anchors: ['first-slide', 'second-slide'],
+  anchors: ['about-me', 'projects', 'contact-me'],
   loopTop: true,
   loopBottom: true,
   verticalCentered: false,
@@ -8,6 +8,6 @@ const fullPage = new fullpage("#fullpage-wrapper", {
   menu: "#link-menu",
   navigation: true,
   navigationPosition: "left",
-  navigationTooltips: ['first-slide', 'second-slide'],
+  navigationTooltips: ['about-me', 'projects', 'contact-me'],
   showNavigationTooltips: true,
 });
