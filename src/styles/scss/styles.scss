@@ -1,8 +1,10 @@
 // Imports
 @use "variables";
+@use "link-menu";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 // ----------------------->
+
 // Global Styling
 *,*::before,*::after {
   box-sizing: border-box;
@@ -18,69 +20,3 @@ body {
   height: 100%;
 }
 // ----------------------->
-
-// Link Menu Styling
-#link-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  display: flex;
-  gap: 2rem;
-}
-
-#link-menu li {
-  list-style: none;
-}
-
-#link-menu a {
-  text-decoration: none;
-}
-
-#link-menu a:visited {
-  color: white;
-}
-
-
-
-.logo-container {
-  display: grid;
-  place-items: center;
-  width: variables.$logo-width;
-  height: variables.$logo-height;
-  text-align: center;
-  border-radius: 10% 50%;
-  background-image: linear-gradient(
-    240deg,
-    hsl(0, 100%, 50%),
-    hsl(241, 100%, 50%)
-  );
-  background-size: 300% 300%;
-  animation: gradient 4s infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 100% 0%;
-  }
-
-  70% {
-    background-position: 100% 0%;
-  }
-
-  85% {
-    background-position: 0% 100%;
-  }
-
-  100% {
-    background-position: 100% 0%;
-  }
-}
-
-.logo-text {
-  font-size: calc(variables.$logo-width * 0.6);
-  margin: 0;
-  font-family: "Montserrat", Monospace;
-  color: white;
-}
