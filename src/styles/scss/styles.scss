@@ -34,6 +34,16 @@ body {
   list-style: none;
 }
 
+#link-menu a {
+  text-decoration: none;
+}
+
+#link-menu a:visited {
+  color: white;
+}
+
+
+
 .logo-container {
   display: grid;
   place-items: center;
