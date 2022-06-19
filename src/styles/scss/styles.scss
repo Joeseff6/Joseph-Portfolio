@@ -25,6 +25,15 @@ body {
   font-size: variables.$small-fs;
   letter-spacing: 2px;
 }
+
+#fp-nav ul li a span{
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+#fp-nav ul li a span:hover{
+  background-color: white;
+}
 // ----------------------->
 // Section 1 Styling
 

@@ -102,6 +102,15 @@ body {
   letter-spacing: 2px;
 }
 
+#fp-nav ul li a span {
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+#fp-nav ul li a span:hover {
+  background-color: white;
+}
+
 .section:nth-child(1) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
