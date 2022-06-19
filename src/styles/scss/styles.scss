@@ -19,6 +19,12 @@ html {
 body {
   height: 100%;
 }
+
+#fp-nav ul li .fp-tooltip {
+  font-family: inherit;
+  font-size: variables.$small-fs;
+  letter-spacing: 2px;
+}
 // ----------------------->
 // Section 1 Styling
 

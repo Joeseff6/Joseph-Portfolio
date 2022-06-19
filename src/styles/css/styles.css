@@ -96,6 +96,12 @@ body {
   height: 100%;
 }
 
+#fp-nav ul li .fp-tooltip {
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
 .section:nth-child(1) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
