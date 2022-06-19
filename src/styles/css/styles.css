@@ -5,16 +5,32 @@
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: black;
+  background-image: linear-gradient(145deg, black, black 45%, white 50%, white 55%, black 60%, black);
+  background-size: 300% 300%;
   color: white;
   padding: 1rem;
   display: flex;
   gap: 2rem;
   align-items: center;
+  list-style: none;
+  animation: translate-nav 6s infinite cubic-bezier(0.03, 0.26, 0, 1);
 }
 
+@keyframes translate-nav {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  70% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
 #link-menu li {
-  list-style: none;
   font-size: clamp(1.6rem, 3vw, 3rem);
   letter-spacing: 1.5px;
 }
