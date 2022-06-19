@@ -11,3 +11,10 @@ const fullPage = new fullpage("#fullpage-wrapper", {
   navigationTooltips: ['about-me', 'projects', 'contact-me'],
   showNavigationTooltips: true,
 });
+
+function calculateTopMargin() {
+  let navHeight = document.getElementById("link-menu").clientHeight;
+  document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`)
+}
+
+calculateTopMargin();
