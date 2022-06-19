@@ -33,6 +33,7 @@
 #link-menu li {
   font-size: clamp(1.6rem, 3vw, 3rem);
   letter-spacing: 1.5px;
+  transition: transform 0.5s;
 }
 
 #link-menu a {
@@ -40,8 +41,8 @@
   color: inherit;
 }
 
-#link-menu a:visited {
-  color: white;
+#link-menu li:not(:first-child):hover {
+  transform: scale(1.1);
 }
 
 .logo-container {
