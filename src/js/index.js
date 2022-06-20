@@ -24,7 +24,7 @@ function changeDropInText() {
     "An aspiring professional Front End Developer",
     "A professional worker",
     "A team player",
-    "A fast and effecient learner",
+    "A fast and efficient learner",
     "A positive spirited individual",
     "A graduate in Mechanical Engineering",
     "A great fit for any company!",
