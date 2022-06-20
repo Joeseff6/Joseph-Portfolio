@@ -20,24 +20,26 @@ function calculateTopMargin() {
 calculateTopMargin();
 
 function changeDropInText() {
-  let textArray = [
+  const textArray = [
     "An aspiring professional Front End Developer",
     "A professional worker",
     "A team player",
     "A fast and effecient learner",
     "A positive spirited individual",
     "A graduate in Mechanical Engineering",
-    "A great fit for any company",
-  ]
+    "A great fit for any company!",
+  ];
+  const dropInElement = document.querySelector(".dropin-text");
   let i = 0;
-
-  document.querySelector(".dropin-text").innerHTML = textArray[i];
-
+  dropInElement.innerHTML = textArray[i];
+  const delay = dropInElement.dataset.timer;
+  document.documentElement.style.setProperty("--dropin-timer", delay);
+  const intervalDelay = Number(delay.replace("s","")) * 1000;
   setInterval(() => {
     i++;
     if (i === textArray.length) i = 0;
     document.querySelector(".dropin-text").innerHTML = textArray[i];
-  }, 4000);
+  }, intervalDelay);
 }
 
 changeDropInText();
