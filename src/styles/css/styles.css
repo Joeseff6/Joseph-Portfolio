@@ -87,6 +87,10 @@
   padding: 0;
 }
 
+:root {
+  --dropin-timer: 0;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Bebas Neue", cursive;
@@ -145,7 +149,7 @@ body {
 }
 
 .dropin-text {
-  animation: dropin-text 4s linear infinite;
+  animation: dropin-text var(--dropin-timer) linear infinite;
 }
 
 @keyframes dropin-text {
