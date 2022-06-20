@@ -80,27 +80,29 @@ body {
 
 .dropin-text-container {
   overflow-y: hidden;
+  font-size: clamp(variables.$normal-fs, 3vw, variables.$largest-fs);
+  min-height: max-content;
 }
 
 .dropin-text {
-  animation: dropin-text var(--dropin-timer) linear infinite;
+  animation: dropin-text var(--dropin-timer) cubic-bezier(.65,.05,.36,1) infinite;
 }
 
 @keyframes dropin-text {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-150px);
   }
   
-  25% {
+  40% {
     transform: translateY(0);
   }
-  
-  75% {
-    transform: translateY(0);
+
+  60% {
+    transform: translateY(-10px);
   }
   
   100% {
-    transform: translateY(100px);
+    transform: translateY(150px);
   }
   
 }
