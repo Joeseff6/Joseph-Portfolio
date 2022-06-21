@@ -116,9 +116,10 @@ body {
 }
 
 .section:nth-child(1) {
-  padding: 2rem 5rem 0 6rem;
+  padding: 2rem 0 0 15rem;
   display: grid;
   grid-template-columns: minmax(20%, 30%) 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
   background-size: 400% 400%;
@@ -142,6 +143,10 @@ body {
   text-align: center;
 }
 
+.hero-header-container > * {
+  margin: 5rem 0;
+}
+
 .hero-img {
   aspect-ratio: 4/3;
   width: clamp(25rem, 50%, 35rem);
@@ -152,7 +157,7 @@ body {
 .dropin-text-container {
   overflow-y: hidden;
   font-size: clamp(2rem, 3vw, 3.6rem);
-  min-height: max-content;
+  max-height: 50%;
 }
 
 .dropin-text {
@@ -164,7 +169,7 @@ body {
     transform: translateY(-150px);
   }
   40% {
-    transform: translateY(0);
+    transform: translateY(10px);
   }
   60% {
     transform: translateY(-10px);
@@ -175,6 +180,7 @@ body {
 }
 .hero-bio-container {
   width: clamp(75ch, 80%, 175ch);
+  grid-column: 2;
 }
 
 .hero-bio-text {
