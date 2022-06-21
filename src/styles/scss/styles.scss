@@ -69,6 +69,10 @@ body {
   }
 }
 
+.hero-header-container, .hero-bio-header {
+  font-size: clamp(variables.$large-fs, 4vw, 5rem);
+}
+
 .hero-img {
   aspect-ratio: 4 / 3;
   width: clamp(25rem, 50%, 35rem);
@@ -110,7 +114,6 @@ body {
 }
 
 .hero-bio-header {
-  font-size: clamp(variables.$large-fs, 4vw, 5rem);
   text-align: center;
 }
 
