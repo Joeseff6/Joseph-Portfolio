@@ -21,7 +21,7 @@ calculateTopMargin();
 
 function changeDropInText() {
   const textArray = [
-    "An aspiring professional Front End Developer",
+    "A Front End Developer",
     "A professional worker",
     "A team player",
     "A fast and efficient learner",
