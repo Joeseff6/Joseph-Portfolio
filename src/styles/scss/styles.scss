@@ -108,10 +108,16 @@ body {
 }
 
 .hero-bio-container {
-  width: clamp(75ch, 75% ,125ch);
+  width: clamp(75ch, 100% ,150ch);
 }
 
 .hero-bio-header {
   font-size: clamp(variables.$large-fs, 4vw, 6rem);
   text-align: center;
+}
+
+.hero-bio-text {
+  font-size: clamp(variables.$smaller-fs, 2vw, variables.$larger-fs);
+  letter-spacing: 1px;
+  line-height: 1;
 }
