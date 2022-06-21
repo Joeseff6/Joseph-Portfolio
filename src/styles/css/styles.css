@@ -118,7 +118,6 @@ body {
 .section:nth-child(1) {
   display: grid;
   grid-template-columns: minmax(20%, 30%) 1fr;
-  place-items: center;
   background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
   background-size: 400% 400%;
   color: white;
@@ -138,7 +137,7 @@ body {
 }
 .hero-img {
   aspect-ratio: 4/3;
-  width: clamp(30rem, 50%, 40rem);
+  width: clamp(25rem, 50%, 35rem);
   border-radius: 100vmax;
   border: 5px solid rgba(255, 255, 255, 0.5);
 }
