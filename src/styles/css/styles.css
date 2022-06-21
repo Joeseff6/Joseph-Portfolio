@@ -116,8 +116,10 @@ body {
 }
 
 .section:nth-child(1) {
+  padding: 2rem 5rem 0 6rem;
   display: grid;
   grid-template-columns: minmax(20%, 30%) 1fr;
+  justify-items: center;
   background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
   background-size: 400% 400%;
   color: white;
@@ -135,8 +137,9 @@ body {
     background-position: 100% 0;
   }
 }
-.hero-header-container, .hero-bio-header {
+.hero-header-container, .hero-bio-header, .dropin-text {
   font-size: clamp(2.4rem, 4vw, 5rem);
+  text-align: center;
 }
 
 .hero-img {
@@ -172,10 +175,6 @@ body {
 }
 .hero-bio-container {
   width: clamp(75ch, 80%, 175ch);
-}
-
-.hero-bio-header {
-  text-align: center;
 }
 
 .hero-bio-text {

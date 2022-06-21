@@ -42,8 +42,10 @@ body {
 // Section 1 Styling
 
 .section:nth-child(1) {
+  padding: 2rem 5rem 0 6rem;
   display: grid;
   grid-template-columns: minmax(20%, 30%) 1fr;
+  justify-items: center;
   background-image: linear-gradient(
     45deg,
     hsl(39, 100%, 50%),
@@ -69,8 +71,9 @@ body {
   }
 }
 
-.hero-header-container, .hero-bio-header {
+.hero-header-container, .hero-bio-header, .dropin-text {
   font-size: clamp(variables.$large-fs, 4vw, 5rem);
+  text-align: center;
 }
 
 .hero-img {
@@ -111,10 +114,6 @@ body {
 
 .hero-bio-container {
   width: clamp(75ch, 80% , 175ch);
-}
-
-.hero-bio-header {
-  text-align: center;
 }
 
 .hero-bio-text {
