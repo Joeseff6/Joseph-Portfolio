@@ -117,8 +117,7 @@ body {
 
 .section:nth-child(1) {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: minmax(20%, 30%) 1fr;
   place-items: center;
   background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
   background-size: 400% 400%;
@@ -169,16 +168,16 @@ body {
   }
 }
 .hero-bio-container {
-  width: clamp(75ch, 100%, 150ch);
+  width: clamp(75ch, 80%, 175ch);
 }
 
 .hero-bio-header {
-  font-size: clamp(2.4rem, 4vw, 6rem);
+  font-size: clamp(2.4rem, 4vw, 5rem);
   text-align: center;
 }
 
 .hero-bio-text {
-  font-size: clamp(1.2rem, 2vw, 3rem);
+  font-size: clamp(1.2rem, 2vw, 2.4rem);
   letter-spacing: 1px;
   line-height: 1;
 }
