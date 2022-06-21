@@ -26,7 +26,7 @@ function changeDropInText() {
     "A team player",
     "A fast and efficient learner",
     "A positive spirited individual",
-    "A graduate in Mechanical Engineering",
+    "A problem solver",
     "A great fit for any company!",
   ];
   const dropInElement = document.getElementById("dropin-text");
