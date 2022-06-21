@@ -168,5 +168,13 @@ body {
     transform: translateY(150px);
   }
 }
+.hero-bio-container {
+  width: clamp(75ch, 75%, 125ch);
+}
+
+.hero-bio-header {
+  font-size: clamp(2.4rem, 4vw, 6rem);
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

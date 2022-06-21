@@ -106,3 +106,12 @@ body {
   }
   
 }
+
+.hero-bio-container {
+  width: clamp(75ch, 75% ,125ch);
+}
+
+.hero-bio-header {
+  font-size: clamp(variables.$large-fs, 4vw, 6rem);
+  text-align: center;
+}
