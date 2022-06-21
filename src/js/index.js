@@ -29,16 +29,17 @@ function changeDropInText() {
     "A graduate in Mechanical Engineering",
     "A great fit for any company!",
   ];
-  const dropInElement = document.querySelector(".dropin-text");
-  let i = 0;
-  dropInElement.innerHTML = textArray[i];
+  const dropInElement = document.getElementById("dropin-text");
   const delay = dropInElement.dataset.timer;
   document.documentElement.style.setProperty("--dropin-timer", delay);
   const intervalDelay = Number(delay.replace("s","")) * 1000;
+  let i = 0;
+  dropInElement.innerHTML = textArray[i];
+  dropInElement.classList.add("dropin-text");
   setInterval(() => {
     i++;
     if (i === textArray.length) i = 0;
-    document.querySelector(".dropin-text").innerHTML = textArray[i];
+    dropInElement.innerText = textArray[i];
   }, intervalDelay);
 }
 
