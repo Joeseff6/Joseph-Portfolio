@@ -57,7 +57,7 @@
   color: inherit;
 }
 
-#link-menu li:not(:first-child):hover {
+#link-menu li:hover {
   transform: scale(1.10);
 }
 
@@ -104,4 +104,18 @@
   font-family: "Montserrat", Monospace;
   color: inherit;
 }
+// ----------------------->
+
+// Icon Container Styling
+.icon-link-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 5rem;
+  column-gap: 5rem;
+}
+
+#link-menu .icon-link-container li:hover {
+  transform: scale(1.50);
+}
+
 // ----------------------->
