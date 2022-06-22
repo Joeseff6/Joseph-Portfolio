@@ -67,9 +67,10 @@ strong {
 // Section 1 Styling
 
 .section:nth-child(1) {
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: 2rem repeat(4, 1fr) 2rem;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 25% repeat(3, 1fr);
   justify-items: center;
   background-image: linear-gradient(
     45deg,
@@ -102,26 +103,29 @@ strong {
 }
 
 .hero-header-container {
-  grid-column: 2 / span 2;
-}
-
-.hero-header-container > * {
-  margin: 5rem 0;
-}
-
-.hero-img {
-  aspect-ratio: 4 / 3;
-  width: clamp(25rem, 100%, 45rem);
-  border-radius: 100vmax;
-  border: 5px solid rgba(255,255,255,0.50);
+  align-self: end;
   grid-column: 2 / span 2;
   grid-row: 1;
 }
 
+.hero-header {
+  margin-bottom: 5rem;
+}
+
+.hero-img {
+  aspect-ratio: 4 / 3;
+  width: clamp(30rem, 50%, 45rem);
+  border-radius: 100vmax;
+  border: 5px solid rgba(255,255,255,0.50);
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
 .slidein-text-container {
+  margin-top: 5rem;
   overflow-x: hidden;
   font-size: clamp(variables.$normal-fs, 3vw, variables.$largest-fs);
-  width: 100%;
+  width: 80%;
   grid-column: 2 / span 2;
   grid-row: 3;
   align-self: center;
@@ -152,12 +156,14 @@ strong {
 
 .hero-bio-container {
   width: clamp(75ch, 80% , 175ch);
-  grid-column: 4 / span 3;
-  grid-row: 1;
+  grid-column: 4 / -1;
+  grid-row: 1 / span 3;
+  justify-self: start;
+  align-self: center;
 }
 
 .hero-bio-text {
-  font-size: clamp(variables.$smaller-fs, 2vw, variables.$large-fs);
+  font-size: clamp(variables.$smaller-fs, 2vw, variables.$larger-fs);
   letter-spacing: 1.5px;
   line-height: 1;
   margin: 2rem 0;
