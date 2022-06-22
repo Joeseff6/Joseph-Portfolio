@@ -19,7 +19,7 @@ function calculateTopMargin() {
 
 calculateTopMargin();
 
-function changeDropInText() {
+function changeslideInText() {
   const textArray = [
     "A Front End Developer",
     "A professional worker",
@@ -29,18 +29,18 @@ function changeDropInText() {
     "A problem solver",
     "A great fit for any company!",
   ];
-  const dropInElement = document.getElementById("dropin-text");
-  const delay = dropInElement.dataset.timer;
-  document.documentElement.style.setProperty("--dropin-timer", delay);
+  const slideInElement = document.getElementById("slidein-text");
+  const delay = slideInElement.dataset.timer;
+  document.documentElement.style.setProperty("--slidein-timer", delay);
   const intervalDelay = Number(delay.replace("s","")) * 1000;
   let i = 0;
-  dropInElement.innerHTML = textArray[i];
-  dropInElement.classList.add("dropin-text");
+  slideInElement.innerHTML = textArray[i];
+  slideInElement.classList.add("slidein-text");
   setInterval(() => {
     i++;
     if (i === textArray.length) i = 0;
-    dropInElement.innerText = textArray[i];
+    slideInElement.innerText = textArray[i];
   }, intervalDelay);
 }
 
-changeDropInText();
+changeslideInText();

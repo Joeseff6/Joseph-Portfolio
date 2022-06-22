@@ -88,7 +88,7 @@
 }
 
 :root {
-  --dropin-timer: 0;
+  --slidein-timer: 0;
 }
 
 html {
@@ -153,7 +153,7 @@ strong {
     background-position: 100% 0;
   }
 }
-.hero-header-container, .hero-bio-header, .dropin-text {
+.hero-header-container, .hero-bio-header, .slidein-text {
   font-size: clamp(2.4rem, 4vw, 5rem);
   text-align: center;
 }
@@ -175,30 +175,30 @@ strong {
   grid-row: 2;
 }
 
-.dropin-text-container {
-  overflow-y: hidden;
+.slidein-text-container {
+  overflow-x: hidden;
   font-size: clamp(2rem, 3vw, 3.6rem);
-  max-height: 50%;
+  width: 100%;
   grid-column: span 2;
   align-self: center;
 }
 
-.dropin-text {
-  animation: dropin-text var(--dropin-timer) cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+.slidein-text {
+  animation: slidein-text var(--slidein-timer) cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
 }
 
-@keyframes dropin-text {
+@keyframes slidein-text {
   0% {
-    transform: translateY(-150px);
+    transform: translateX(-150%);
   }
   40% {
-    transform: translateY(10px);
+    transform: translateX(10px);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateX(-10px);
   }
   100% {
-    transform: translateY(150px);
+    transform: translateX(150%);
   }
 }
 .hero-bio-container {
