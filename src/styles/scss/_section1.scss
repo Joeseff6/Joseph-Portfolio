@@ -99,13 +99,13 @@
 }
 
 .hero-bio-text {
-  font-size: clamp(variables.$smaller-fs, 2vw, variables.$larger-fs);
+  font-size: clamp(variables.$normal-fs, 2vw, variables.$larger-fs);
   letter-spacing: 1.5px;
-  line-height: 1;
-  margin: 2rem 0;
+  line-height: 1.25;
+  margin: 4rem 0;
 }
 
 .hero-bio-text::before {
   content: "";
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
