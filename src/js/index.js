@@ -12,6 +12,10 @@ const fullPage = new fullpage("#fullpage-wrapper", {
   showNavigationTooltips: true,
 });
 
+// Initialize Global timeout and interval for slide-in text
+let slideInTimeoutId;
+let slideInIntervalId;
+
 function calculateTopMargin() {
   let navHeight = document.getElementById("link-menu").clientHeight;
   document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`)
@@ -36,7 +40,7 @@ function changeslideInText() {
   let i = 0;
   slideInElement.innerHTML = textArray[i];
   slideInElement.classList.add("slidein-text");
-  setInterval(() => {
+  slideInIntervalId = setInterval(() => {
     i++;
     if (i === textArray.length) i = 0;
     slideInElement.innerText = textArray[i];
@@ -44,3 +48,18 @@ function changeslideInText() {
 }
 
 changeslideInText();
+
+function resetSlideInText() {
+  const slideInElement = document.getElementById("slidein-text");
+  slideInElement.classList.remove("slidein-text");
+  document.documentElement.style.setProperty("--slidein-timer", "0s");
+  slideInTimeoutId = setTimeout(() => {
+    changeslideInText();
+  })
+}
+
+window.addEventListener("resize", () => {
+  clearTimeout(slideInTimeoutId);
+  clearInterval(slideInIntervalId);
+  resetSlideInText();
+})
