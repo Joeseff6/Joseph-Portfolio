@@ -207,6 +207,7 @@ body {
 }
 
 strong {
+  -webkit-background-clip: text;
   background-image: linear-gradient(90deg, black, black 40%, white, black 60%, black);
   background-clip: text;
   background-size: 400% 400%;
