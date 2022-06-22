@@ -81,56 +81,6 @@
   color: inherit;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --slidein-timer: 0;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Bebas Neue", cursive;
-}
-
-body {
-  height: 100%;
-}
-
-strong {
-  background-image: linear-gradient(90deg, black, black 40%, white, black 60%, black);
-  background-clip: text;
-  background-size: 400% 400%;
-  color: transparent;
-  animation: focus-strong 3s linear infinite;
-}
-
-@keyframes focus-strong {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-#fp-nav ul li .fp-tooltip {
-  font-family: inherit;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-}
-
-#fp-nav ul li a span {
-  background-color: black;
-  transition: background-color 0.5s;
-}
-
-#fp-nav ul li a span:hover {
-  background-color: white;
-}
-
 .section:nth-child(1) {
   padding-top: 5rem;
   display: grid;
@@ -224,6 +174,56 @@ strong {
 .hero-bio-text::before {
   content: "";
   margin-left: 5rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --slidein-timer: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  height: 100%;
+}
+
+strong {
+  background-image: linear-gradient(90deg, black, black 40%, white, black 60%, black);
+  background-clip: text;
+  background-size: 400% 400%;
+  color: transparent;
+  animation: focus-strong 3s linear infinite;
+}
+
+@keyframes focus-strong {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#fp-nav ul li .fp-tooltip {
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+#fp-nav ul li a span {
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+#fp-nav ul li a span:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
