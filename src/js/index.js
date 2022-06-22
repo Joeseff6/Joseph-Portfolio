@@ -51,11 +51,13 @@ changeslideInText();
 
 function resetSlideInText() {
   const slideInElement = document.getElementById("slidein-text");
-  slideInElement.classList.remove("slidein-text");
+  if (Object.values(slideInElement.classList).includes("slidein-text")) {
+    slideInElement.classList.remove("slidein-text");
+  }
   document.documentElement.style.setProperty("--slidein-timer", "0s");
   slideInTimeoutId = setTimeout(() => {
     changeslideInText();
-  })
+  }, 500);
 }
 
 window.addEventListener("resize", () => {
