@@ -48,8 +48,8 @@
 .logo-container {
   display: grid;
   place-items: center;
+  aspect-ratio: 1;
   width: 6rem;
-  height: 6rem;
   text-align: center;
   background-image: linear-gradient(240deg, hsl(0deg, 100%, 50%), hsl(268deg, 75%, 50%));
   background-size: 300% 300%;
@@ -116,7 +116,7 @@
   }
 }
 .hero-header-container, .hero-bio-header, .slidein-text {
-  font-size: clamp(2.4rem, 4vw, 5rem);
+  font-size: clamp(3.6rem, 4vw, 5rem);
   text-align: center;
 }
 
@@ -142,7 +142,6 @@
 .slidein-text-container {
   margin-top: 5rem;
   overflow-x: hidden;
-  font-size: clamp(2rem, 3vw, 3.6rem);
   width: 80%;
   grid-column: 2/span 2;
   grid-row: 3;
@@ -180,7 +179,7 @@
 }
 
 .hero-bio-text {
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2.4rem, 2vw, 3rem);
   letter-spacing: 1.5px;
   line-height: 1.25;
   margin: 2rem 0;
@@ -249,7 +248,7 @@ strong {
   .section:nth-child(1) {
     padding-top: 1.5rem;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: max-content 1fr 2fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
   }
   .hero-header-container,
 .slidein-text-container,
@@ -283,7 +282,8 @@ strong {
     align-self: start;
   }
   .hero-bio-text:nth-of-type(1),
-.logo-header {
+.logo-header,
+.hero-bio-header {
     display: none;
   }
   .hero-bio-text {
