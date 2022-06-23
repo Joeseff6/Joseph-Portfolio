@@ -31,7 +31,7 @@
   }
 }
 #link-menu li {
-  font-size: clamp(1.6rem, 3vw, 3rem);
+  font-size: clamp(2.4rem, 3vw, 3rem);
   letter-spacing: 1.5px;
   transition: transform 0.5s;
 }
@@ -85,7 +85,7 @@
   display: flex;
   margin-left: auto;
   margin-right: 5rem;
-  column-gap: 5rem;
+  gap: 4rem;
 }
 
 #link-menu .icon-link-container li:hover {
@@ -289,6 +289,18 @@ strong {
   }
   .hero-bio-text {
     margin: 1rem 0;
+  }
+}
+@media (max-width: 645px) {
+  .icon-link-container {
+    margin: 0;
+    position: fixed;
+    inset: 25% 0 25% 90%;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
   }
 }
 

@@ -128,4 +128,17 @@ strong {
     margin: 1rem 0; 
   }
 }
+
+@media (max-width: 645px) {
+  .icon-link-container {
+    margin: 0;
+    position: fixed;
+    inset: 25% 0 25% 90%;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+  }
+}
 // ----------------------->
