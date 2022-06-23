@@ -66,6 +66,7 @@ strong {
   background-color: white;
 }
 
+// ----------------------->
 // Media Queries
 
 @media (max-width: 1075px) {
@@ -78,6 +79,13 @@ strong {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: max-content 1fr 2fr;
   }
+
+  .hero-header-container, 
+  .slidein-text-container,
+  .hero-img {
+    align-self: center;
+  }
+
 
   .hero-header-container {
     grid-column: 1;
@@ -93,14 +101,12 @@ strong {
     width: 100%;
     grid-column: 2;
     grid-row: 1;
-    align-self: center;
   }
 
   .hero-img {
     grid-column: 1 / span 2;
     grid-row: 2;
     width: clamp(27rem, 35%, 35rem);
-    align-self: center;
   }
   
   .hero-bio-container {
