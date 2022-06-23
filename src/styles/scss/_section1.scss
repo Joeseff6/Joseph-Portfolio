@@ -98,6 +98,10 @@
   align-self: center;
 }
 
+.hero-bio-header {
+  letter-spacing: 2px;
+}
+
 .hero-bio-text {
   font-size: clamp(variables.$normal-fs, 2vw, variables.$larger-fs);
   letter-spacing: 1.5px;
