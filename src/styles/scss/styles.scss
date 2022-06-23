@@ -75,7 +75,7 @@ strong {
   }
 
   .section:nth-child(1) {
-    padding-top: unset;
+    padding-top: 1.5rem;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: max-content 1fr 2fr;
   }
