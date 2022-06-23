@@ -247,9 +247,9 @@ strong {
     display: none;
   }
   .section:nth-child(1) {
-    padding-top: 0;
+    padding-top: unset;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 10% max-content 1fr;
+    grid-template-rows: max-content 1fr 2fr;
   }
   .hero-header-container {
     grid-column: 1;
@@ -268,15 +268,20 @@ strong {
   .hero-img {
     grid-column: 1/span 2;
     grid-row: 2;
-    width: clamp(20rem, 35%, 35rem);
+    width: clamp(27rem, 35%, 35rem);
+    align-self: center;
   }
   .hero-bio-container {
     margin-top: 2rem;
+    width: 95%;
     text-align: center;
     grid-column: 1/span 2;
     grid-row: 3;
     justify-self: center;
     align-self: start;
+  }
+  .hero-bio-text {
+    margin: 1rem 0;
   }
 }
 
