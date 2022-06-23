@@ -34,7 +34,7 @@
 }
 
 .hero-header-container, .hero-bio-header, .slidein-text {
-  font-size: clamp(variables.$large-fs, 4vw, 5rem);
+  font-size: clamp(variables.$largest-fs, 4vw, 5rem);
   text-align: center;
 }
 
@@ -60,7 +60,6 @@
 .slidein-text-container {
   margin-top: 5rem;
   overflow-x: hidden;
-  font-size: clamp(variables.$normal-fs, 3vw, variables.$largest-fs);
   width: 80%;
   grid-column: 2 / span 2;
   grid-row: 3;
