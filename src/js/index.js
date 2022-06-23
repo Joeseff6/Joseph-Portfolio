@@ -63,5 +63,7 @@ function resetSlideInText() {
 window.addEventListener("resize", () => {
   clearTimeout(slideInTimeoutId);
   clearInterval(slideInIntervalId);
+  const slideInElement = document.getElementById("slidein-text");
+  slideInElement.innerText = "";
   resetSlideInText();
 })
