@@ -64,8 +64,8 @@
 .logo-container {
   display: grid;
   place-items: center;
+  aspect-ratio: 1;
   width: variables.$logo-width;
-  height: variables.$logo-height;
   text-align: center;
   background-image: linear-gradient(
     240deg,
