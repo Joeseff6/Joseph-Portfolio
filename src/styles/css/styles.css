@@ -283,7 +283,8 @@ strong {
     justify-self: center;
     align-self: start;
   }
-  .hero-bio-text:nth-of-type(1) {
+  .hero-bio-text:nth-of-type(1),
+.logo-header {
     display: none;
   }
   .hero-bio-text {
