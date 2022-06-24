@@ -218,6 +218,10 @@ strong {
   .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
     display: none;
   }
+  .first-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   #fp-nav {
     display: none;
   }
@@ -232,6 +236,7 @@ strong {
   .first-section-container {
     padding-top: 2rem;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: max-content 8rem 1fr 1fr;
     justify-items: center;
     align-items: center;
