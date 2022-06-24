@@ -224,4 +224,23 @@ strong {
   background-color: white;
 }
 
+@media (max-width: 1095px) {
+  .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
+    display: none;
+  }
+  .first-section-container {
+    grid-template-rows: 10% 1fr 1fr;
+  }
+  .hero-img, .hero-bio-container {
+    grid-column: span 2;
+  }
+  .hero-bio-container {
+    align-self: flex-start;
+    text-align: center;
+  }
+  #fp-nav {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
