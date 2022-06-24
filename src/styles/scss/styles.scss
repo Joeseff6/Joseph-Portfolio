@@ -101,7 +101,6 @@ strong {
   }
   
   .hero-bio-container {
-    margin-top: 2rem;
     text-align: center;
   }
 
@@ -125,7 +124,7 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:2rem
+    gap: 1rem;
   }
 
   .icon-link-container {
@@ -138,5 +137,6 @@ strong {
     align-items: center;
     border-radius: 5px 0 0 5px;
   }
+
 }
 // ----------------------->
