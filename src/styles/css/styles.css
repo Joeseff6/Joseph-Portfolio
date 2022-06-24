@@ -214,47 +214,4 @@ strong {
   background-color: white;
 }
 
-@media (max-width: 900px) {
-  .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
-    display: none;
-  }
-  .first-section-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #fp-nav {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
-    display: none;
-  }
-  #link-menu {
-    justify-content: space-evenly;
-  }
-  .first-section-container {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 8rem 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .icon-link-container {
-    margin: 0;
-    position: fixed;
-    inset: 25% 0 25% 90%;
-    background-color: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px 0 0 5px;
-  }
-  .hero-bio-container {
-    text-align: center;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
