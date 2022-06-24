@@ -36,7 +36,7 @@ function changeslideInText() {
   const slideInElement = document.getElementById("slidein-text");
   const delay = slideInElement.dataset.timer;
   document.documentElement.style.setProperty("--slidein-timer", delay);
-  const intervalDelay = Number(delay.replace("s","")) * 1000;
+  const intervalDelay = parseInt(delay) * 1000;
   let i = 0;
   slideInElement.innerHTML = textArray[i];
   slideInElement.classList.add("slidein-text");
