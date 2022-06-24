@@ -148,7 +148,7 @@
   }
 }
 .hero-img {
-  aspect-ratio: 1;
+  aspect-ratio: 4/3;
   width: clamp(30rem, 55%, 45rem);
   border-radius: 2rem;
   border: 5px solid rgba(255, 255, 255, 0.5);
