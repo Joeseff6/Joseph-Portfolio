@@ -243,5 +243,37 @@ strong {
     align-self: flex-start;
   }
 }
+@media (max-width: 625px) {
+  #link-menu {
+    justify-content: space-evenly;
+  }
+  #fp-nav {
+    display: none;
+  }
+  .icon-link-container {
+    margin: 0;
+    position: fixed;
+    inset: 25% 0 25% 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+  }
+  .first-section-container {
+    padding: 2rem;
+    grid-template-rows: 12rem max-content 1fr;
+    gap: 1rem;
+  }
+  .hero-header-container {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+  }
+  .slidein-text-container {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+  .hero-img {
+    width: clamp(25rem, 60%, 38rem);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
