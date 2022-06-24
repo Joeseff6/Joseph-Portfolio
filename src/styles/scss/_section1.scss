@@ -4,10 +4,6 @@
 
 .section:nth-child(1) {
   padding-top: 5rem;
-  display: grid;
-  grid-template-columns: 2rem repeat(4, 1fr) 2rem;
-  grid-template-rows: 25% repeat(3, 1fr);
-  justify-items: center;
   background-image: linear-gradient(
     45deg,
     hsl(39, 100%, 50%),
@@ -39,13 +35,9 @@
 }
 
 .hero-header-container {
-  align-self: end;
-  grid-column: 2 / span 2;
-  grid-row: 1;
 }
 
 .hero-header {
-  margin-bottom: 5rem;
 }
 
 .hero-img {
@@ -53,17 +45,11 @@
   width: clamp(30rem, 50%, 45rem);
   border-radius: 100vmax;
   border: 5px solid rgba(255,255,255,0.50);
-  grid-column: 2 / span 2;
-  grid-row: 2;
 }
 
 .slidein-text-container {
-  margin-top: 5rem;
   overflow-x: hidden;
   width: 80%;
-  grid-column: 2 / span 2;
-  grid-row: 3;
-  align-self: center;
 }
 
 .slidein-text {
@@ -91,10 +77,7 @@
 
 .hero-bio-container {
   width: clamp(75ch, 80% , 175ch);
-  grid-column: 4 / -1;
-  grid-row: 1 / span 3;
   justify-self: start;
-  align-self: center;
 }
 
 .hero-bio-header {
@@ -105,10 +88,8 @@
   font-size: clamp(variables.$large-fs, 2vw, variables.$larger-fs);
   letter-spacing: 1.5px;
   line-height: 1.25;
-  margin: 2rem 0;
 }
 
 .hero-bio-text::before {
   content: "";
-  margin-left: 3rem;
 }
