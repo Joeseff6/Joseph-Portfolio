@@ -306,6 +306,9 @@ strong {
   .nav-toggler {
     display: unset;
   }
+  i[class~=open] {
+    display: none;
+  }
   .first-section-container {
     padding: 2rem;
     grid-template-rows: 12rem max-content 1fr;
