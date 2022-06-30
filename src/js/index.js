@@ -67,3 +67,18 @@ window.addEventListener("resize", () => {
   slideInElement.innerText = "";
   resetSlideInText();
 })
+
+function setToggler() {
+  const navigationContainer = document.querySelector(".icon-link-container");
+  const navigationToggler = document.querySelector(".nav-toggler");
+  navigationToggler.addEventListener("click", () => {
+    const visibility = navigationContainer.getAttribute("data-visible");
+    if (visibility === "false") {
+      navigationContainer.setAttribute("data-visible", "true");
+    } else {
+      navigationContainer.setAttribute("data-visible", "false");
+    }
+  })
+}
+
+setToggler();
