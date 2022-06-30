@@ -192,72 +192,6 @@
   margin-left: 4rem;
 }
 
-.sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important; /* 2 */
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important; /* 3 */
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --slidein-timer: 0;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Bebas Neue", cursive;
-}
-
-body {
-  height: 100%;
-  overflow-x: hidden;
-}
-
-strong {
-  -webkit-background-clip: text;
-  background-image: linear-gradient(90deg, black, black 40%, white, black 60%, black);
-  background-clip: text;
-  background-size: 400% 400%;
-  color: transparent;
-  animation: focus-strong 3s linear infinite;
-}
-
-@keyframes focus-strong {
-  0% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-#fp-nav ul li .fp-tooltip {
-  font-family: inherit;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-}
-
-#fp-nav ul li a span {
-  background-color: black;
-  transition: background-color 0.5s;
-}
-
-#fp-nav ul li a span:hover {
-  background-color: white;
-}
-
 @media (max-width: 1095px) {
   .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
     display: none;
@@ -330,6 +264,71 @@ strong {
   .hero-bio-text::before {
     margin: 0;
   }
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --slidein-timer: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+strong {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, black, black 40%, white, black 60%, black);
+  background-clip: text;
+  background-size: 400% 400%;
+  color: transparent;
+  animation: focus-strong 3s linear infinite;
+}
+
+@keyframes focus-strong {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#fp-nav ul li .fp-tooltip {
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+#fp-nav ul li a span {
+  background-color: black;
+  transition: background-color 0.5s;
+}
+
+#fp-nav ul li a span:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
