@@ -70,6 +70,11 @@
   
 }
 
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-img {
   aspect-ratio: 4 / 3;
   width: clamp(40rem, 70%, 45rem);
