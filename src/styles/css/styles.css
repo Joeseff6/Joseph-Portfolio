@@ -147,6 +147,11 @@
     transform: translateX(150%);
   }
 }
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-img {
   aspect-ratio: 4/3;
   width: clamp(40rem, 70%, 45rem);
@@ -228,7 +233,7 @@ strong {
   .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
     display: none;
   }
-  .hero-img, .hero-bio-container {
+  .hero-img-container, .hero-bio-container {
     grid-column: span 2;
   }
   .first-section-container {
