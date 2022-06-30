@@ -223,6 +223,7 @@ html {
 
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 strong {
@@ -295,6 +296,7 @@ strong {
     justify-content: center;
     align-items: center;
     border-radius: 5px 0 0 5px;
+    transform: translateX(100%);
   }
   .nav-toggler {
     display: unset;
