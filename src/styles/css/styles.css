@@ -297,9 +297,11 @@ strong {
     align-items: center;
     border-radius: 5px 0 0 5px;
     transform: translateX(100%);
+    transition: transform 0.5s;
   }
   .icon-link-container[data-visible=true] {
     transform: translateX(0%);
+    transition: transform 0.5s;
   }
   .nav-toggler {
     display: unset;
