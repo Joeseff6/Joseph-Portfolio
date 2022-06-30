@@ -108,6 +108,7 @@
 
 // Icon Container Styling
 .icon-link-container {
+  position: relative;
   display: flex;
   margin-left: auto;
   margin-right: 2em;
@@ -119,3 +120,16 @@
 }
 
 // ----------------------->
+
+// Nav Toggler Styling
+.nav-toggler {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: variables.$nav-toggler-width;
+  aspect-ratio: 1 / 3;
+  top: 40%;
+  left: calc(-1 * variables.$nav-toggler-width);
+  z-index: 99;
+  border: none;
+}
