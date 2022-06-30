@@ -170,5 +170,8 @@ strong {
     line-height: 1.5;
   }
 
+  .hero-bio-text::before {
+    margin: 0;
+  }
 }
 // ----------------------->
