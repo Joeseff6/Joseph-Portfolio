@@ -298,6 +298,9 @@ strong {
     border-radius: 5px 0 0 5px;
     transform: translateX(100%);
   }
+  .icon-link-container[data-visible=true] {
+    transform: translateX(0%);
+  }
   .nav-toggler {
     display: unset;
   }
