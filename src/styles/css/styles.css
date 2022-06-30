@@ -274,6 +274,10 @@ strong {
   .hero-img {
     width: clamp(25rem, 60%, 38rem);
   }
+  .hero-bio-container {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.5;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
