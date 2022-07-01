@@ -137,8 +137,12 @@ function displayProject(project) {
 
 function displayProjectButtons(projectType, projects) {
   let buttonContainer = document.querySelector(".project-buttons-container");
+  while (buttonContainer.firstChild) {
+    buttonContainer.removeChild(buttonContainer.firstChild);
+  }
   projects.forEach(project => {
     // console.log(project);
+    buttonContainer.removeChild
     let button = document.createElement("button");
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
