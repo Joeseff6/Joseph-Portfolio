@@ -133,4 +133,3 @@ function displayProject(project) {
   projectDescription.innerText = project.description;
 }
 
-displayProject()
