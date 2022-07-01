@@ -6,5 +6,13 @@
       "deployedLink": "some link",
       "githubLink": "some other link"
     }
+  ],
+  "sql": [
+    {
+      "name": "project2",
+      "description": "My second project",
+      "deployedLink": "some link",
+      "githubLink": "some other link"
+    }
   ]
 }
