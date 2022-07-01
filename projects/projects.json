@@ -1,0 +1,10 @@
+{
+  "react": [
+    {
+      "name": "project1",
+      "description": "My first project",
+      "deployedLink": "some link",
+      "githubLink": "some other link"
+    }
+  ]
+}
