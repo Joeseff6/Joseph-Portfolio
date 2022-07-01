@@ -93,7 +93,7 @@ function setupProjectButtons() {
   const projectButtons = document.querySelectorAll(".project-button");
   projectButtons.forEach(button => {
     button.addEventListener("click", (event) => {
-      const selectedProjectType = event.target.innerText.toLowerCase();
+      const selectedProjectType = event.target.dataset.type;
       const fetchProjects = async (selectedProjectType) => {
         let data = await fetch("../../projects/projects.json");
         let projectsObject = await data.json();
