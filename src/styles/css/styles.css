@@ -231,14 +231,14 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.project-button-container {
+.project-type-container {
   padding: 2rem 0;
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
 
-.project-button {
+.project-type-button {
   width: 15rem;
   aspect-ratio: 1/0.25;
   font-size: 2rem;
@@ -249,7 +249,7 @@
   transition: transform 0.5s;
 }
 
-.project-button:hover {
+.project-type-button:hover {
   transform: scale(1.15);
 }
 
@@ -278,9 +278,22 @@
   font-family: monospace;
 }
 
-.pagination-container {
+.project-buttons-container {
+  margin-bottom: 2rem;
   text-align: center;
   grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.project-buttons-container button {
+  padding: 1rem;
+}
+
+#text {
+  width: 0;
+  font-size: 0;
 }
 
 .project-img {
