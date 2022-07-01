@@ -290,6 +290,25 @@
 
 .project-information {
   justify-self: center;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.project-information-header {
+  font-size: clamp(3rem, 3vw, 4rem);
+}
+
+.project-github-link, .project-deployed-link {
+  font-size: clamp(2rem, 2vw, 2.6rem);
+}
+
+.project-tech-stack {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+}
+
+.project-description {
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
 }
 
 @media (max-width: 1095px) {
