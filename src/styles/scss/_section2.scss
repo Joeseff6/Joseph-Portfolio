@@ -61,8 +61,7 @@
 }
 
 .project-type-button {
-  width: 15rem;
-  aspect-ratio: 1 / 0.25;
+  padding: 1rem 3rem;
   font-size: variables.$normal-fs;
   font-weight: bold;
   letter-spacing: 2px;
@@ -113,11 +112,6 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  button {
-    padding: 1rem;
-
-  }
 }
 
 .left-slide, .right-slide {
@@ -127,11 +121,6 @@
   button {
 
   }
-}
-
-#text {
-  width: 0;
-  font-size: 0;
 }
 
 .project-img {
