@@ -32,30 +32,34 @@
 }
 
 .second-section-container {
-  max-width: 80%;
+  width: clamp(60rem, 80%, 100rem);
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
+  border: 5px dotted white;
 }
 
 .section-two-heading {
+  margin-top: 2rem;
   text-align: center;
   font-size: clamp(4rem, 3vw, 6rem);
   letter-spacing: 2px;
 }
 
 .project-button-container {
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .project-button {
   width: 15rem;
   aspect-ratio: 1 / 0.25;
   font-size: variables.$normal-fs;
+  font-weight: bold;
   letter-spacing: 2px;
   border-radius: 100vmax;
   cursor: pointer;
