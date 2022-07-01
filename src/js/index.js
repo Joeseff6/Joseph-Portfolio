@@ -90,7 +90,7 @@ function setToggler() {
 setToggler();
 
 function setupProjectButtons() {
-  const projectButtons = document.querySelectorAll(".project-button");
+  const projectButtons = document.querySelectorAll(".project-type-button");
   projectButtons.forEach(button => {
     button.addEventListener("click", (event) => {
       const selectedProjectType = event.target.dataset.type;
