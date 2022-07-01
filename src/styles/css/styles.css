@@ -226,6 +226,11 @@
   letter-spacing: 2px;
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .project-button-container {
   padding: 2rem 0;
   display: flex;
@@ -273,19 +278,14 @@
   font-family: monospace;
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
 .pagination-container {
   text-align: center;
   grid-column: span 2;
 }
 
 .project-img {
-  max-width: 50rem;
-  aspect-ratio: 3/4;
+  width: 100%;
+  aspect-ratio: 4/3;
 }
 
 .project-information {
