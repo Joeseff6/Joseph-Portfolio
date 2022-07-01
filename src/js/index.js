@@ -88,3 +88,30 @@ function setToggler() {
 }
 
 setToggler();
+
+function setupProjectButtons() {
+  const projectButtons = document.querySelectorAll(".project-button");
+  projectButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
+      const selectedProjectType = event.target.innerText.toLowerCase();
+      const fetchProjects = async (selectedProjectType) => {
+        let data = await fetch("../../projects/projects.json");
+        let projectsObject = await data.json();
+        let project = [];
+        for (const projectProp in projectsObject) {
+          if (projectProp === selectedProjectType) {
+            project = projectsObject[projectProp];
+          }
+        }
+        if (!project.length) {
+          throw ("Project type not found");
+        }
+        console.log(project);
+      }
+      fetchProjects(selectedProjectType);
+    });
+  });
+}
+
+setupProjectButtons();
+
