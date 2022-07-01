@@ -95,7 +95,7 @@ function setupProjectButtons() {
     button.addEventListener("click", (event) => {
       const selectedProjectType = event.target.dataset.type;
       const fetchProjects = async (selectedProjectType) => {
-        let data = await fetch("../../projects/projects.json");
+        let data = await fetch("/projects/projects.json");
         let projectsObject = await data.json();
         let project = [];
         for (const projectProp in projectsObject) {
@@ -106,7 +106,7 @@ function setupProjectButtons() {
         if (!project.length) {
           throw ("Project type not found");
         }
-        console.log(project);
+        displayProject(project[0]);
       }
       fetchProjects(selectedProjectType);
     });
@@ -115,3 +115,22 @@ function setupProjectButtons() {
 
 setupProjectButtons();
 
+function displayProject(project) {
+  let projectHeader = document.querySelector(".project-information-header");
+  let projectImage = document.querySelector(".project-img");
+  let projectGithubLink = document.querySelector(".project-github-link");
+  let projectDeployedLink = document.querySelector(".project-deployed-link");
+  let projectTechStack = document.querySelector(".project-tech-stack");
+  let projectDescription = document.querySelector(".project-description");
+  projectHeader.innerText = project.name;
+  projectImage.setAttribute("src", project.screenshot);
+  projectImage.setAttribute("alt", project.screenshotAlt);
+  projectGithubLink.setAttribute("href", project.githubLink);
+  projectGithubLink.innerText = project.githubLink;
+  projectDeployedLink.setAttribute("href", project.deployedLink)
+  projectDeployedLink.innerText = project.deployedLink;
+  projectTechStack.innerText = "Tech Stack: " + project.techStack;
+  projectDescription.innerText = project.description;
+}
+
+displayProject()
