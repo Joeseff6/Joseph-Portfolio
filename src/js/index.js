@@ -106,7 +106,9 @@ function setupProjectButtons() {
         if (!project.length) {
           throw ("Project type not found");
         }
-        displayProject(project[0]);
+        console.log(project)
+        displayProjectButtons(selectedProjectType,project)
+        // displayProject(project[0]);
       }
       fetchProjects(selectedProjectType);
     });
@@ -133,3 +135,14 @@ function displayProject(project) {
   projectDescription.innerText = project.description;
 }
 
+function displayProjectButtons(projectType, projects) {
+  let buttonContainer = document.querySelector(".project-buttons-container");
+  projects.forEach(project => {
+    // console.log(project);
+    let button = document.createElement("button");
+    button.innerHTML = project.name;
+    button.setAttribute("class", `project-type-button ${projectType}`);
+    buttonContainer.append(button);
+  })
+
+}
