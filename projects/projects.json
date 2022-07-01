@@ -4,7 +4,9 @@
       "name": "project1",
       "description": "My first project",
       "deployedLink": "some link",
-      "githubLink": "some other link"
+      "githubLink": "some other link",
+      "screenshot": "image link",
+      "techStack": "HTML, CSS, Javascript, React"
     }
   ],
   "sql": [
@@ -12,7 +14,9 @@
       "name": "project2",
       "description": "My second project",
       "deployedLink": "some link",
-      "githubLink": "some other link"
+      "githubLink": "some other link",
+      "screenshot": "image link",
+      "techStack": "HTML, CSS, Javascript, SQL"
     }
   ]
 }
