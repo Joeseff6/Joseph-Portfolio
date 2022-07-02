@@ -106,9 +106,7 @@ function setupProjectButtons() {
         if (!project.length) {
           throw ("Project type not found");
         }
-        console.log(project)
         displayProjectButtons(selectedProjectType,project)
-        // displayProject(project[0]);
       }
       fetchProjects(selectedProjectType);
     });
