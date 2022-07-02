@@ -35,8 +35,12 @@ function displayProject(project) {
   projectImage.setAttribute("alt", project.screenshotAlt);
   projectGithubLink.setAttribute("href", project.githubLink);
   projectGithubLink.innerText = "Github Link";
-  projectDeployedLink.setAttribute("href", project.deployedLink)
-  projectDeployedLink.innerText = "Deployed Link";
+  if (!project.deployedLink) {
+    projectDeployedLink.innerText = "Deployment link unavailable";
+  } else {
+    projectDeployedLink.setAttribute("href", project.deployedLink)
+    projectDeployedLink.innerText = "Deployed Link";
+  }
   projectTechStack.innerText = "Tech Stack: " + project.techStack;
   projectDescription.innerText = project.description;
 }
