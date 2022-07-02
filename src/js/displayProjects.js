@@ -35,6 +35,7 @@ function displayProject(project) {
   projectImage.setAttribute("alt", project.screenshotAlt);
   projectGithubLink.setAttribute("href", project.githubLink);
   projectGithubLink.innerText = "Github Link";
+  projectDeployedLink.removeAttribute("href");
   if (!project.deployedLink) {
     projectDeployedLink.innerText = "Deployment link unavailable";
   } else {
