@@ -141,12 +141,13 @@ function displayProjectButtons(projectType, projects) {
     buttonContainer.removeChild(buttonContainer.firstChild);
   }
   projects.forEach(project => {
-    // console.log(project);
     buttonContainer.removeChild
     let button = document.createElement("button");
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
+    button.addEventListener("click", () => {
+      displayProject(project);
+    });
     buttonContainer.append(button);
   })
-
 }
