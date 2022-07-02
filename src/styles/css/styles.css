@@ -300,6 +300,9 @@
   text-align: center;
   letter-spacing: 1.5px;
 }
+.project-information a {
+  color: white;
+}
 
 .project-information-header {
   font-size: clamp(3rem, 3vw, 4rem);
