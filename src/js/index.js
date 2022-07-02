@@ -119,12 +119,13 @@ setupProjectButtons();
 
 function displayProject(project) {
   let projectHeader = document.querySelector(".project-information-header");
-  let projectImage = document.querySelector(".project-img");
+  let projectImage = document.getElementById("project-img");
   let projectGithubLink = document.querySelector(".project-github-link");
   let projectDeployedLink = document.querySelector(".project-deployed-link");
   let projectTechStack = document.querySelector(".project-tech-stack");
   let projectDescription = document.querySelector(".project-description");
   projectHeader.innerText = project.name;
+  projectImage.setAttribute("class", "project-img");
   projectImage.setAttribute("src", project.screenshot);
   projectImage.setAttribute("alt", project.screenshotAlt);
   projectGithubLink.setAttribute("href", project.githubLink);
