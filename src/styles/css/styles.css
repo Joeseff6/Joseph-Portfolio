@@ -210,7 +210,7 @@
   }
 }
 .second-section-container {
-  width: clamp(60rem, 80%, 100rem);
+  width: clamp(60rem, 80%, 110rem);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -219,27 +219,29 @@
 }
 
 .section-two-heading {
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-align: center;
-  font-size: clamp(4rem, 3vw, 6rem);
+  font-size: clamp(4rem, 5vw, 6rem);
   letter-spacing: 2px;
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.projects-container {
+  margin-top: 3rem;
+}
+
+.projects-container > * {
+  margin-bottom: 3rem;
 }
 
 .project-type-container {
-  padding: 2rem 0;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .project-type-button {
-  padding: 1rem 3rem;
-  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-size: clamp(1.6rem, 1vw, 2rem);
   font-weight: bold;
   letter-spacing: 2px;
   border-radius: 100vmax;
@@ -259,8 +261,8 @@
 
 .sql {
   background-color: #3E6E93;
-  color: #f29221;
-  border: 2px solid white;
+  color: white;
+  border: 2px solid #f29221;
 }
 
 .frontend {
@@ -276,8 +278,15 @@
   font-family: monospace;
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.project-container .project-screenshot {
+  align-self: center;
+}
+
 .project-buttons-container {
-  margin-bottom: 2rem;
   text-align: center;
   grid-column: span 2;
   display: flex;
@@ -304,21 +313,26 @@
   color: white;
 }
 
+.project-information > * {
+  margin-bottom: 1.5rem;
+}
+
 .project-information-header {
-  font-size: clamp(3rem, 3vw, 4rem);
+  font-size: clamp(3rem, 2vw, 4rem);
 }
 
-.project-github-link, .project-deployed-link {
-  font-size: clamp(2rem, 2vw, 2.6rem);
-}
-
-.project-tech-stack {
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+.project-github-link, .project-deployed-link, .project-tech-stack {
+  font-size: clamp(2.2rem, 1.5vw, 2.6rem);
 }
 
 .project-description {
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-size: clamp(2rem, 1.25vw, 2.2rem);
   text-align: left;
+}
+
+.project-description::before {
+  content: "";
+  margin-left: 3rem;
 }
 
 @media (max-width: 1095px) {
