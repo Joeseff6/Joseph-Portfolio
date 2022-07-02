@@ -95,7 +95,7 @@ function setupProjectButtons() {
     button.addEventListener("click", (event) => {
       const selectedProjectType = event.target.dataset.type;
       const fetchProjects = async (selectedProjectType) => {
-        let data = await fetch("/projects/projects.json");
+        let data = await fetch("../../projects/projects.json");
         let projectsObject = await data.json();
         let project = [];
         for (const projectProp in projectsObject) {
@@ -106,7 +106,7 @@ function setupProjectButtons() {
         if (!project.length) {
           throw ("Project type not found");
         }
-        displayProjectButtons(selectedProjectType,project)
+        displayProjectButtons(selectedProjectType, project);
       }
       fetchProjects(selectedProjectType);
     });
