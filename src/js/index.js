@@ -127,9 +127,9 @@ function displayProject(project) {
   projectImage.setAttribute("src", project.screenshot);
   projectImage.setAttribute("alt", project.screenshotAlt);
   projectGithubLink.setAttribute("href", project.githubLink);
-  projectGithubLink.innerText = project.githubLink;
+  projectGithubLink.innerText = "Github Link";
   projectDeployedLink.setAttribute("href", project.deployedLink)
-  projectDeployedLink.innerText = project.deployedLink;
+  projectDeployedLink.innerText = "Deployed Link";
   projectTechStack.innerText = "Tech Stack: " + project.techStack;
   projectDescription.innerText = project.description;
 }
