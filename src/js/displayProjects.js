@@ -57,8 +57,26 @@ function displayProjectButtons(projectType, projects) {
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
     button.addEventListener("click", () => {
+      projectPopInOut();
       displayProject(project);
     });
     buttonContainer.append(button);
   })
+}
+
+function projectPopInOut() {
+  let popInOutContainer = document.querySelector(".popInOut-container");
+  let popInOutContainerClassesArray = Array(...popInOutContainer.classList);
+
+  if (!popInOutContainerClassesArray.includes("pop-in") 
+    &&
+    !popInOutContainerClassesArray.includes("pop-out")) {
+      popInOutContainer.classList.add("pop-in");
+    } else if (popInOutContainerClassesArray.includes("pop-in")) {
+      popInOutContainer.classList.remove("pop-in");
+      popInOutContainer.classList.add("pop-out");
+    } else if (popInOutContainerClassesArray.includes("pop-out")) {
+      popInOutContainer.classList.remove("pop-out");
+      popInOutContainer.classList.add("pop-in");
+    }
 }
