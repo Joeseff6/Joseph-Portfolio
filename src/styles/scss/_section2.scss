@@ -106,6 +106,10 @@
 }
 
 .project-container {
+  overflow-y: hidden;
+}
+
+.popInOut-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   .project-screenshot {
