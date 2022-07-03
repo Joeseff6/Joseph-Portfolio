@@ -355,11 +355,11 @@
   overflow-y: hidden;
 }
 
-.popInOut-container {
+.popIn-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.popInOut-container .project-screenshot {
+.popIn-container .project-screenshot {
   align-self: center;
 }
 
