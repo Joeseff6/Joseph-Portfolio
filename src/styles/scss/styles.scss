@@ -105,3 +105,31 @@ strong {
     transform: scale(1);
   }
 }
+
+.pop-in {
+  animation: pop-in 1s linear forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: translateY(150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.pop-out {
+  animation: pop-out 1s linear forwards;
+}
+
+@keyframes pop-out {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
