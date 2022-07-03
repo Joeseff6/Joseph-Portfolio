@@ -1,6 +1,7 @@
 // Import projects to be displayed
 import projectsObject from "./projects.js";
-let popInTimeoutId;
+let popInTimeoutId, projectName;
+
 
 // Main display projects function. Export to main JS file.
 export default function setupProjectButtons() {
@@ -34,7 +35,6 @@ function displayProjectButtons(projectType, projects) {
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
     button.addEventListener("click", () => {
-      console.log(project)
       projectPopIn(project);
     });
     buttonContainer.append(button);
@@ -42,6 +42,8 @@ function displayProjectButtons(projectType, projects) {
 }
 
 function projectPopIn(project) {
+  if (projectName === project.name) return;
+  projectName = project.name;
   let popInContainer = document.querySelector(".popIn-container");
   let popInContainerClassesArray = Array(...popInContainer.classList);
   if (
