@@ -121,7 +121,7 @@ strong {
 }
 
 .pop-out {
-  animation: pop-out 1s ease-out forwards;
+  animation: pop-out 1s ease-in forwards;
 }
 
 @keyframes pop-out {
