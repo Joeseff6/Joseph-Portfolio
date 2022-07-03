@@ -489,7 +489,7 @@ strong {
   }
 }
 .pop-in {
-  animation: pop-in 1s linear forwards;
+  animation: pop-in 1s ease-out forwards;
 }
 
 @keyframes pop-in {
@@ -501,7 +501,7 @@ strong {
   }
 }
 .pop-out {
-  animation: pop-out 1s linear forwards;
+  animation: pop-out 1s ease-out forwards;
 }
 
 @keyframes pop-out {
