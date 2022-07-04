@@ -51,7 +51,7 @@ const projectsObject = {
   "frontend": [
     {
       name: "Product Landing Page",
-      description: "While working through freeCodeCamp's Responsive Web Design course, I developed the Product Landing Page as one of my certification projects. This page features simple HTML and CSS, with the purpose of demonstrating my basic layout skills.",
+      description: "While working through freeCodeCamp's Responsive Web Design course, I developed the Product Landing Page as a certification project. This page features HTML and CSS, with the purpose of demonstrating my layout skills.",
       deployedLink: "https://joeseff6.github.io/Product-Landing-Page",
       githubLink: "https://github.com/Joeseff6/Product-Landing-Page",
       screenshot: "./public/images/ProductLandingPage.png",
