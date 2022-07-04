@@ -223,10 +223,17 @@
 
   .project-information {
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .project-information > * {
     font-size: clamp(1.8rem, 3vw, 2.6rem)
+  }
+
+  .project-information {
+    .project-information-header {
+      font-size: clamp(2.4rem, 5vw, 3.4rem)
+    }
   }
 
   .project-description {
