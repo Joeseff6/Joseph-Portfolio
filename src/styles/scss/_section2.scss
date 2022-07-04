@@ -243,6 +243,20 @@
 }
 
 @media (max-width: 500px) {
+  .second-section-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .project-display-container {
+    margin-top: unset;
+  }
+
+  .project-information {
+    padding: 0;
+    gap: 0.5rem
+  }
+  
   .project-information > p:not(:last-child) {
     display: none;
   }
