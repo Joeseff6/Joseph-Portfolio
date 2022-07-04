@@ -241,3 +241,13 @@
     text-align: center;
   }
 }
+
+@media (max-width: 500px) {
+  .project-information > p:not(:last-child) {
+    display: none;
+  }
+
+  .project-information-header {
+    grid-column: span 2;
+  }
+}
