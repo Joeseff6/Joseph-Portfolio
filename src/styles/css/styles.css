@@ -351,6 +351,21 @@
   font-family: monospace;
 }
 
+.project-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  overflow-x: hidden;
+}
+
+.slideIn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
 .project-container {
   overflow-y: hidden;
 }
@@ -361,13 +376,6 @@
 }
 .popIn-container .project-screenshot {
   align-self: center;
-}
-
-.slideIn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
 }
 
 .project-img {

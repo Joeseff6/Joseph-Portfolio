@@ -59,7 +59,7 @@ function projectTypesSlideIn(projectType, projects) {
       slideInContainer.classList.remove("slide-out");
       displayProjectButtons(projectType, projects);
       slideInContainer.classList.add("slide-in");
-    }, 1000)
+    }, 1000);
   }
 }
 
