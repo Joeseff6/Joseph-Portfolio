@@ -56,6 +56,10 @@
 }
 
 .project-type-container {
+  overflow-x: hidden;
+}
+
+.slideIn-container {
   display: flex;
   justify-content: center;
   gap: 3rem;

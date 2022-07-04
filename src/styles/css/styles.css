@@ -307,6 +307,10 @@
 }
 
 .project-type-container {
+  overflow-x: hidden;
+}
+
+.slideIn-container {
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -510,6 +514,30 @@ strong {
   }
   100% {
     transform: translateY(150%);
+  }
+}
+.slide-in {
+  animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide-out {
+  animation: slide-out 1s ease-in forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(150%);
   }
 }
 
