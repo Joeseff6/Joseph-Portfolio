@@ -298,11 +298,11 @@
   letter-spacing: 2px;
 }
 
-.projects-container {
+.project-display-container {
   margin-top: 3rem;
 }
 
-.projects-container {
+.project-display-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -425,10 +425,10 @@
   .second-section-container > * {
     margin-top: 1rem;
   }
-  .projects-container > * {
+  .project-display-container > * {
     margin-bottom: 1rem;
   }
-  .project-type-container, .slideIn-container, .projects-container {
+  .project-type-container, .slideIn-container, .project-display-container {
     gap: 1rem;
   }
   .project-buttons-container {
