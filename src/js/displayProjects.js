@@ -1,6 +1,6 @@
 // Import projects to be displayed
 import projectsObject from "./projects.js";
-let popInTimeoutId, projectName;
+let popInTimeoutId, slideInTimeoutId, currentProjectType, currentProjectName;
 
 
 // Main display projects function. Export to main JS file.
@@ -18,32 +18,54 @@ export default function setupProjectButtons() {
       if (!projects.length) {
         throw "Project type not found";
       }
-      displayProjectButtons(selectedProjectType, projects);
+      projectTypesSlideIn(selectedProjectType, projects);
     });
   });
 }
 
 // Functions to actually display project upon project button click
 function displayProjectButtons(projectType, projects) {
-  let buttonContainer = document.querySelector(".project-buttons-container");
-  while (buttonContainer.firstChild) {
-    buttonContainer.removeChild(buttonContainer.firstChild);
+  let slideInContainer = document.querySelector(".slideIn-container");
+  while (slideInContainer.firstChild) {
+    slideInContainer.removeChild(slideInContainer.firstChild);
   }
   projects.forEach((project) => {
-    buttonContainer.removeChild;
     let button = document.createElement("button");
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
     button.addEventListener("click", () => {
       projectPopIn(project);
     });
-    buttonContainer.append(button);
+    slideInContainer.append(button);
   });
 }
 
+function projectTypesSlideIn(projectType, projects) {
+  if (currentProjectType === projectType) return;
+  currentProjectType = projectType;
+  let slideInContainer = document.querySelector(".slideIn-container");
+  let slideInContainerClassArray = Array(...slideInContainer.classList);
+  if (
+    !slideInContainerClassArray.includes("slide-in") &&
+    !slideInContainerClassArray.includes("slide-out")
+  ) {
+    displayProjectButtons(projectType, projects);
+    slideInContainer.classList.add("slide-in");
+  } else if (slideInContainerClassArray.includes("slide-in")) {
+    clearTimeout(slideInTimeoutId);
+    slideInContainer.classList.remove("slide-in");
+    slideInContainer.classList.add("slide-out");
+    slideInTimeoutId = setTimeout(() => {
+      slideInContainer.classList.remove("slide-out");
+      displayProjectButtons(projectType, projects);
+      slideInContainer.classList.add("slide-in");
+    }, 1000)
+  }
+}
+
 function projectPopIn(project) {
-  if (projectName === project.name) return;
-  projectName = project.name;
+  if (currentProjectName === project.name) return;
+  currentProjectName = project.name;
   let popInContainer = document.querySelector(".popIn-container");
   let popInContainerClassesArray = Array(...popInContainer.classList);
   if (
