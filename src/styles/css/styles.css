@@ -557,7 +557,7 @@ strong {
 
 @keyframes pop-in {
   0% {
-    transform: translateY(150%);
+    transform: translateY(200%);
   }
   100% {
     transform: translateY(0%);
@@ -572,7 +572,7 @@ strong {
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(150%);
+    transform: translateY(200%);
   }
 }
 .slide-in {
