@@ -66,6 +66,7 @@ function projectTypesSlideIn(projectType, projects) {
 function projectPopIn(project) {
   if (currentProjectName === project.name) return;
   currentProjectName = project.name;
+  let projectImage = document.getElementById("project-img");
   let popInContainer = document.querySelector(".popIn-container");
   let popInContainerClassesArray = Array(...popInContainer.classList);
   if (
@@ -80,8 +81,10 @@ function projectPopIn(project) {
     popInContainer.classList.add("pop-out");
     popInTimeoutId = setTimeout(() => {
       displayProject(project);
-      popInContainer.classList.add("pop-in");
-      popInContainer.classList.remove("pop-out");
+      projectImage.addEventListener("load", () => {
+        popInContainer.classList.add("pop-in");
+        popInContainer.classList.remove("pop-out");
+      })
     }, 1000);
   }
 }
