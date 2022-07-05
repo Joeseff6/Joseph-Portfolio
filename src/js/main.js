@@ -4,9 +4,9 @@ import setupProjectButtons from "./displayProjects.js";
 
 function calculateTopMargin() {
   let navHeight = document.getElementById("link-menu").clientHeight;
-  document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`)
+  document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`);
 }
-calculateTopMargin();
+window.addEventListener("load", calculateTopMargin());
 
 changeslideInText();
 setToggler();
