@@ -89,10 +89,6 @@ strong {
 
 // Utilities
 
-.active {
-  animation: pulse 2s linear infinite;
-}
-
 @keyframes pulse {
   0% {
     transform: scale(1);
