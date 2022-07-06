@@ -53,27 +53,16 @@
   text-align: center;
   background-image: linear-gradient(240deg, hsl(0deg, 100%, 50%), hsl(268deg, 75%, 50%));
   background-size: 300% 300%;
-  animation: gradient 4s infinite;
+  background-position: 100% 0%;
+  border-radius: 10% 40%;
+  transition: border-radius 1s, background-position 1s;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 100% 0%;
-    border-radius: 10% 40%;
-  }
-  70% {
-    background-position: 100% 0%;
-    border-radius: 10% 40%;
-  }
-  85% {
-    background-position: 0% 100%;
-    border-radius: 40% 10%;
-  }
-  100% {
-    background-position: 100% 0%;
-    border-radius: 10% 40%;
-  }
+.logo-container:hover {
+  background-position: 0% 100%;
+  border-radius: 40% 10%;
 }
+
 .logo-text {
   font-size: 3.6rem;
   margin: 0;
