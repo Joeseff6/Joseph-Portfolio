@@ -9,7 +9,7 @@ function calculateTopMargin() {
 
 setTimeout(() => {
   calculateTopMargin();
-}, 500)
+}, 50)
 
 changeslideInText();
 setToggler();
