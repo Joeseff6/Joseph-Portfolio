@@ -519,9 +519,9 @@ html {
 }
 
 body {
-  margin-top: 80px;
   height: 100%;
   overflow-x: hidden;
+  transition: margin-top 0.5s;
 }
 
 strong {

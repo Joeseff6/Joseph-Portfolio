@@ -39,9 +39,9 @@ html {
 }
 
 body {
-  margin-top: 80px;
   height: 100%;
   overflow-x: hidden;
+  transition: margin-top 0.5s;
 }
 
 strong {
@@ -57,7 +57,7 @@ strong {
   background-clip: text;
   background-size: 400% 400%;
   color: transparent;
-  animation: focus-strong 4s linear infinite;
+  animation: focus-strong 5s linear infinite;
 }
 
 @keyframes focus-strong {
