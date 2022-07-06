@@ -6,7 +6,10 @@ function calculateTopMargin() {
   let navHeight = document.getElementById("link-menu").clientHeight;
   document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`);
 }
-window.addEventListener("load", calculateTopMargin());
+
+setTimeout(() => {
+  calculateTopMargin();
+}, 500)
 
 changeslideInText();
 setToggler();
