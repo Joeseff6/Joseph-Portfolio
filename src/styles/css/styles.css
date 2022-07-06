@@ -140,7 +140,7 @@
   font-size: clamp(3rem, 2vw, 5rem);
   text-align: center;
   overflow: hidden;
-  width: 90%;
+  width: 100%;
 }
 
 .slidein-text {
@@ -530,7 +530,7 @@ strong {
   background-clip: text;
   background-size: 400% 400%;
   color: transparent;
-  animation: focus-strong 3s linear infinite;
+  animation: focus-strong 4s linear infinite;
 }
 
 @keyframes focus-strong {
