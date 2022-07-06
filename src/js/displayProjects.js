@@ -74,9 +74,7 @@ function projectPopIn(project) {
     !popInContainerClassesArray.includes("pop-out")
   ) {
     displayProject(project);
-    projectImage.addEventListener("load", () => {
-      popInContainer.classList.add("pop-in");
-    })
+    popInContainer.classList.add("pop-in");
   } else if (popInContainerClassesArray.includes("pop-in")) {
     clearTimeout(popInTimeoutId);
     popInContainer.classList.remove("pop-in");
