@@ -23,7 +23,7 @@
   gap: 2rem;
   align-items: center;
   list-style: none;
-  animation: translate-nav 5s infinite cubic-bezier(.03,.26,0,1);
+  animation: translate-nav 5s infinite cubic-bezier(0.25, 0.84, 0.69, 0.98);
 }
 
 @keyframes translate-nav {
@@ -31,11 +31,11 @@
     background-position: 100%;
   }
 
-  50% {
+  20% {
     background-position: 100%;
   }
 
-  70% {
+  65% {
     background-position: 0%;
   }
 
