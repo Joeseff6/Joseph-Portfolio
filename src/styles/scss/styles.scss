@@ -94,20 +94,6 @@ strong {
 
 // Utilities
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.10);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 .pop-in {
   animation: pop-in 1s ease-out forwards;
 }

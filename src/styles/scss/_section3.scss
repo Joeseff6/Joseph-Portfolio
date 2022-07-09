@@ -1,4 +1,7 @@
+@use "variables";
+
 .section:nth-child(3) {
+  color: white;
   background-image: linear-gradient(
     to top right,
     hsl(274,100%,50%),
@@ -20,4 +23,53 @@
   100% {
     background-position: 100% 0;
   }
+}
+
+.section-three-heading {
+  margin-top: 4rem;
+  font-size: clamp(4rem, 10vw, 6rem);
+}
+
+.third-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me-container-background {
+  margin-top: 3rem;
+  background-color: white;
+  width: clamp(30rem, 70%, 50rem);
+  min-height: 40rem;
+  position: relative;
+  background-image: linear-gradient(
+    hsl(187,100%,50%),
+    hsl(274,100%,50%)
+  );
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(black, 0.70);
+  padding: 1rem;
+  position: absolute;
+  inset: 5px;
+  p {
+    font-size: clamp(variables.$small-fs, 3vw,variables.$large-fs);
+    letter-spacing: 1.25px;
+    text-align: center;
+    i {
+      margin-right: 1rem;
+    }
+    a {
+      color: white;
+      text-decoration: dotted;
+    }
+  }
+}
+
+.contact-me-container-background, .contact-me-container {
+  border-radius: 1rem;
 }
