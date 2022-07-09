@@ -1,6 +1,15 @@
 const projectsObject = {
   "react": [
     {
+      name: "MERN-Google-Books",
+      description: "Using the Google Books API, I built one of my first MERN applications featuring user login. A user can create an account and save/delete books of their interest.",
+      deployedLink: "https://my-mern-google-books.herokuapp.com",
+      githubLink: "https://github.com/Joeseff6/MERN-Google-Books",
+      screenshot: "./public/images/MernGoogleBooks.PNG",
+      screenshotAlt: "A screenshot of my MERN Google Books project",
+      techStack: "MongoDB, Express, React, Node"
+    },
+    {
       name: "Reactive Calculator",
       description: "Performing single operations in Javascript is easy. Performing multiple operations using a single line of text becomes challenging. This project demonstrates my ability to write algorithms to solve complex problems.",
       deployedLink: "https://velvety-treacle-71a2a2.netlify.app",
@@ -17,15 +26,6 @@ const projectsObject = {
       screenshot: "./public/images/TaskTracker.PNG",
       screenshotAlt: "A screenshot of my Task Tracker project",
       techStack: "React, IndexedDB, Dexie"
-    },
-    {
-      name: "MERN-Google-Books",
-      description: "Using the Google Books API, I built one of my first MERN applications featuring user login. A user can create an account and save/delete books of their interest.",
-      deployedLink: "https://whispering-springs-93162.herokuapp.com",
-      githubLink: "https://github.com/Joeseff6/MERN-Google-Books",
-      screenshot: "./public/images/MernGoogleBooks.PNG",
-      screenshotAlt: "A screenshot of my MERN Google Books project",
-      techStack: "MongoDB, Express, React, Node"
     }
   ],
   "sql": [
