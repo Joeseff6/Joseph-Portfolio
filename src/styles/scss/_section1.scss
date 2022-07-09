@@ -11,10 +11,10 @@
   );
   background-size: 400% 400%;
   color: white;
-  animation: section1-gradient 40s linear infinite;
+  animation: translate-background1 40s linear infinite;
 }
 
-@keyframes section1-gradient {
+@keyframes translate-background1 {
   0% {
     background-position: 100% 0;
   }

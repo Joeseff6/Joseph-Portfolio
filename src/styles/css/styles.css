@@ -99,10 +99,10 @@
   background-image: linear-gradient(45deg, hsl(39deg, 100%, 50%), hsl(0deg, 75%, 50%), hsl(58deg, 75%, 50%));
   background-size: 400% 400%;
   color: white;
-  animation: section1-gradient 40s linear infinite;
+  animation: translate-background1 40s linear infinite;
 }
 
-@keyframes section1-gradient {
+@keyframes translate-background1 {
   0% {
     background-position: 100% 0;
   }
@@ -257,10 +257,10 @@
 .section:nth-child(2) {
   background-image: linear-gradient(135deg, hsl(0deg, 0%, 10%), hsl(0deg, 0%, 10%) 35%, hsl(196deg, 100%, 50%), hsl(0deg, 0%, 10%) 65%, hsl(0deg, 0%, 10%));
   background-size: 500% 500%;
-  animation: translate-background 30s linear infinite;
+  animation: translate-background2 30s linear infinite;
 }
 
-@keyframes translate-background {
+@keyframes translate-background2 {
   0% {
     background-position: 0% 50%;
   }
@@ -476,6 +476,23 @@
   }
   .project-information-header {
     grid-column: span 2;
+  }
+}
+.section:nth-child(3) {
+  background-image: linear-gradient(to top right, hsl(274deg, 100%, 50%), hsl(187deg, 100%, 50%));
+  background-size: 400% 400%;
+  animation: translate-background1 40s linear infinite;
+}
+
+@keyframes translate-background3 {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0;
   }
 }
 .sr-only {

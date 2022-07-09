@@ -12,12 +12,12 @@
     hsl(0, 0%, 10%)
   );
   background-size: 500% 500%;
-  animation: translate-background 30s linear infinite;
+  animation: translate-background2 30s linear infinite;
 }
 
 
 
-@keyframes translate-background {
+@keyframes translate-background2 {
   0% {
     background-position: 0% 50%;
   }

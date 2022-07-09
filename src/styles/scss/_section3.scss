@@ -1,0 +1,23 @@
+.section:nth-child(3) {
+  background-image: linear-gradient(
+    to top right,
+    hsl(274,100%,50%),
+    hsl(187,100%,50%)
+  );
+  background-size: 400% 400%;
+  animation: translate-background1 40s linear infinite;
+}
+
+@keyframes translate-background3 {
+  0% {
+    background-position: 100% 0;
+  }
+
+  50% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
