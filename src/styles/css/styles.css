@@ -13,17 +13,17 @@
   gap: 2rem;
   align-items: center;
   list-style: none;
-  animation: translate-nav 5s infinite cubic-bezier(0.25, 0.84, 0.69, 0.98);
+  animation: translate-nav 10s infinite cubic-bezier(0.04, 1.3, 1, 1);
 }
 
 @keyframes translate-nav {
   0% {
     background-position: 100%;
   }
-  20% {
+  30% {
     background-position: 100%;
   }
-  65% {
+  60% {
     background-position: 0%;
   }
   100% {
