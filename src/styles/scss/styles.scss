@@ -45,6 +45,10 @@ body {
   transition: margin-top 0.5s;
 }
 
+a {
+  text-decoration: none;
+}
+
 strong {
   -webkit-background-clip: text;
   background-image: linear-gradient(
