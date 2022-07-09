@@ -26,23 +26,3 @@ export default function changeslideInText() {
     slideInElement.innerText = textArray[i];
   }, intervalDelay);
 }
-
-// Resize function for resetting slide-in text.
-function resetSlideInText() {
-  const slideInElement = document.getElementById("slidein-text");
-  if (Object.values(slideInElement.classList).includes("slidein-text")) {
-    slideInElement.classList.remove("slidein-text");
-  }
-  document.documentElement.style.setProperty("--slidein-timer", "0s");
-  slideInTimeoutId = setTimeout(() => {
-    changeslideInText();
-  }, 500);
-}
-
-window.addEventListener("resize", () => {
-  clearTimeout(slideInTimeoutId);
-  clearInterval(slideInIntervalId);
-  const slideInElement = document.getElementById("slidein-text");
-  slideInElement.innerText = "";
-  resetSlideInText();
-})
