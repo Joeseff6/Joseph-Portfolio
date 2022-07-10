@@ -473,16 +473,20 @@ nav * {
   position: absolute;
   inset: 5px;
 }
+.contact-me-container a {
+  color: white;
+}
+.contact-me-container a p:hover {
+  transform: scale(1.03);
+}
 .contact-me-container p {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: 1.25px;
   text-align: center;
+  transition: transform 0.5s;
 }
-.contact-me-container p i {
+.contact-me-container i {
   margin-right: 1rem;
-}
-.contact-me-container p a {
-  color: white;
 }
 
 .contact-me-container-background, .contact-me-container {

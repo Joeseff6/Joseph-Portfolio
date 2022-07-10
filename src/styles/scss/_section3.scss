@@ -56,16 +56,20 @@
   padding: 1rem;
   position: absolute;
   inset: 5px;
+  a {
+    color: white;
+    p:hover {
+      transform: scale(1.03);
+    };
+  }
   p {
     font-size: clamp(variables.$small-fs, 3vw,variables.$large-fs);
     letter-spacing: 1.25px;
     text-align: center;
-    i {
-      margin-right: 1rem;
-    }
-    a {
-      color: white;
-    }
+    transition: transform 0.5s;
+  }
+  i {
+    margin-right: 1rem;
   }
 }
 
