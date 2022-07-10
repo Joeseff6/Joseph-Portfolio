@@ -15,7 +15,7 @@
 .logo-container {
   display: grid;
   place-items: center;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   width: variables.$logo-width;
   text-align: center;
   background-image: linear-gradient(
