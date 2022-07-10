@@ -1,6 +1,6 @@
 export default function setToggler() {
   const navigationContainer = document.querySelector(".icon-link-container");
-  const navigationToggler = document.querySelector(".nav-toggler");
+  const navigationToggler = document.querySelector(".icon-link-toggler");
   navigationToggler.addEventListener("click", () => {
     const visibility = navigationContainer.getAttribute("data-visible");
     if (visibility === "false") {
