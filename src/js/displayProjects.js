@@ -2,7 +2,6 @@
 import projectsObject from "./projects.js";
 let popInTimeoutId, slideInTimeoutId, currentProjectType, currentProjectName;
 
-
 // Main display projects function. Export to main JS file.
 export default function setupProjectButtons() {
   const projectButtons = document.querySelectorAll(".project-type-button");
@@ -25,12 +24,12 @@ export default function setupProjectButtons() {
 
 // Functions to actually display project upon project button click
 function displayProjectButtons(projectType, projects) {
-  let slideInContainer = document.querySelector(".slideIn-container");
+  const slideInContainer = document.querySelector(".slideIn-container");
   while (slideInContainer.firstChild) {
     slideInContainer.removeChild(slideInContainer.firstChild);
   }
   projects.forEach((project) => {
-    let button = document.createElement("button");
+    const button = document.createElement("button");
     button.innerHTML = project.name;
     button.setAttribute("class", `project-type-button ${projectType}`);
     button.addEventListener("click", () => {
@@ -43,7 +42,7 @@ function displayProjectButtons(projectType, projects) {
 function projectTypesSlideIn(projectType, projects) {
   if (currentProjectType === projectType) return;
   currentProjectType = projectType;
-  let slideInContainer = document.querySelector(".slideIn-container");
+  const slideInContainer = document.querySelector(".slideIn-container");
   let slideInContainerClassArray = Array(...slideInContainer.classList);
   if (
     !slideInContainerClassArray.includes("slide-in") &&
@@ -66,8 +65,7 @@ function projectTypesSlideIn(projectType, projects) {
 function projectPopIn(project) {
   if (currentProjectName === project.name) return;
   currentProjectName = project.name;
-  let projectImage = document.getElementById("project-img");
-  let popInContainer = document.querySelector(".popIn-container");
+  const popInContainer = document.querySelector(".popIn-container");
   let popInContainerClassesArray = Array(...popInContainer.classList);
   if (
     !popInContainerClassesArray.includes("pop-in") &&
@@ -81,26 +79,31 @@ function projectPopIn(project) {
     popInContainer.classList.add("pop-out");
     popInTimeoutId = setTimeout(() => {
       displayProject(project);
+      const projectImage = document.querySelector(".project-img");
       projectImage.addEventListener("load", () => {
         popInContainer.classList.add("pop-in");
         popInContainer.classList.remove("pop-out");
-      })
+      });
     }, 1000);
   }
 }
 
 function displayProject(project) {
-  let projectHeader = document.querySelector(".project-information-header");
-  let projectImage = document.getElementById("project-img");
-  let projectGithubLink = document.querySelector(".project-github-link");
-  let projectDeployedLink = document.querySelector(".project-deployed-link");
-  let projectTechStack = document.querySelector(".project-tech-stack");
-  let projectDescription = document.querySelector(".project-description");
+  const projectHeader = document.querySelector(".project-information-header");
+  const projectImageContainer = document.querySelector(".project-screenshot");
+  const projectGithubLink = document.querySelector(".project-github-link");
+  const projectDeployedLink = document.querySelector(".project-deployed-link");
+  const projectTechStack = document.querySelector(".project-tech-stack");
+  const projectDescription = document.querySelector(".project-description");
+  const projectImage = document.createElement("img");
   projectHeader.innerText = project.name;
   projectImage.setAttribute("class", "project-img");
   projectImage.setAttribute("src", project.screenshot);
   projectImage.setAttribute("alt", project.screenshotAlt);
   projectGithubLink.setAttribute("href", project.githubLink);
+  if (projectImageContainer.hasChildNodes())
+    projectImageContainer.removeChild(projectImageContainer.lastChild);
+  projectImageContainer.appendChild(projectImage);
   projectGithubLink.innerText = "Github Link";
   projectDeployedLink.removeAttribute("href");
   if (!project.deployedLink) {
@@ -112,6 +115,3 @@ function displayProject(project) {
   projectTechStack.innerText = "Tech Stack: " + project.techStack;
   projectDescription.innerText = project.description;
 }
-
-
-
