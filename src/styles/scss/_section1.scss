@@ -101,7 +101,9 @@
   content: "";
   margin-left: 4rem;
 }
+// ----------------------->
 
+// Media Queries
 @media (max-width: 1095px) {
   .logo-header, .hero-bio-header, .hero-bio-text:nth-of-type(1) {
     display: none;
@@ -127,39 +129,6 @@
 }
 
 @media (max-width: 625px) {
-  #link-menu {
-    justify-content: space-evenly;
-  }
-
-  #fp-nav {
-    display: none;
-  }
-
-  .icon-link-container {
-    margin: 0;
-    position: fixed;
-    right: 0;
-    top: 25%;
-    bottom: 25%;
-    width: 6rem;
-    background-color: rgba(0,0,0, 0.80);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px 0 0 5px;
-    transform: translateX(100%);
-    transition: transform 0.5s;
-  }
-
-  .icon-link-container[data-visible="true"] {
-    transform: translateX(0%);
-    transition: transform 0.5s;
-  }
-
-  .nav-toggler {
-    display: unset;
-  }
-
   i[class~="open"] {
     display: none;
   }

@@ -2,64 +2,16 @@
 
 // Link Menu Parent Styling
 #link-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-image: linear-gradient(
-    145deg,
-  black,
-  black 45%,
-  white 50%,
-  white 55%,
-  black 60%,
-  black 
-  );
-  background-size: 300% 300%;
-  color: white;
-  padding: 1rem;
   display: flex;
   gap: 2rem;
   align-items: center;
   list-style: none;
-  animation: translate-nav 10s infinite cubic-bezier(.04,1.3,1,1);
 }
 
-@keyframes translate-nav {
-  0% {
-    background-position: 100%;
-  }
 
-  30% {
-    background-position: 100%;
-  }
-
-  60% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 100%;
-  }
-}
 // ----------------------->
 
 // Link Menu Children Styling
-#link-menu li {
-  font-size: clamp(variables.$large-fs, 3vw, variables.$larger-fs);
-  letter-spacing: 1.5px;
-  transition: transform 0.5s;
-}
-
-#link-menu a {
-  color: inherit;
-}
-
-#link-menu li:hover {
-  transform: scale(1.10);
-}
-
 .logo-container {
   display: grid;
   place-items: center;
@@ -90,33 +42,8 @@
   font-family: "Montserrat", Monospace;
   color: inherit;
 }
+
+#link-menu > *:hover {
+  transform: scale(1.10);
+}
 // ----------------------->
-
-// Icon Container Styling
-.icon-link-container {
-  position: relative;
-  display: flex;
-  margin-left: auto;
-  margin-right: 2em;
-  gap: 4em;
-}
-
-#link-menu .icon-link-container li:hover {
-  transform: scale(1.50);
-}
-
-// ----------------------->
-
-// Nav Toggler Styling
-.nav-toggler {
-  display: none;
-  position: absolute;
-  background-color: black;
-  color: white;
-  width: variables.$nav-toggler-width;
-  aspect-ratio: 1 / 3;
-  top: 40%;
-  left: calc(-1 * variables.$nav-toggler-width);
-  z-index: 99;
-  border: none;
-}

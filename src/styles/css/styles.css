@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap");
-#link-menu {
+nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  padding: 1rem;
+  color: white;
   z-index: 99;
   background-image: linear-gradient(145deg, black, black 45%, white 50%, white 55%, black 60%, black);
   background-size: 300% 300%;
-  color: white;
-  padding: 1rem;
   display: flex;
-  gap: 2rem;
-  align-items: center;
-  list-style: none;
   animation: translate-nav 10s infinite cubic-bezier(0.04, 1.3, 1, 1);
 }
 
@@ -30,18 +27,18 @@
     background-position: 100%;
   }
 }
-#link-menu li {
+nav * {
   font-size: clamp(2.4rem, 3vw, 3rem);
   letter-spacing: 1.5px;
   transition: transform 0.5s;
-}
-
-#link-menu a {
   color: inherit;
 }
 
-#link-menu li:hover {
-  transform: scale(1.1);
+#link-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
 }
 
 .logo-container {
@@ -69,29 +66,8 @@
   color: inherit;
 }
 
-.icon-link-container {
-  position: relative;
-  display: flex;
-  margin-left: auto;
-  margin-right: 2em;
-  gap: 4em;
-}
-
-#link-menu .icon-link-container li:hover {
-  transform: scale(1.5);
-}
-
-.nav-toggler {
-  display: none;
-  position: absolute;
-  background-color: black;
-  color: white;
-  width: 3rem;
-  aspect-ratio: 1/3;
-  top: 40%;
-  left: -3rem;
-  z-index: 99;
-  border: none;
+#link-menu > *:hover {
+  transform: scale(1.1);
 }
 
 .section:nth-child(1) {
@@ -201,34 +177,6 @@
   }
 }
 @media (max-width: 625px) {
-  #link-menu {
-    justify-content: space-evenly;
-  }
-  #fp-nav {
-    display: none;
-  }
-  .icon-link-container {
-    margin: 0;
-    position: fixed;
-    right: 0;
-    top: 25%;
-    bottom: 25%;
-    width: 6rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px 0 0 5px;
-    transform: translateX(100%);
-    transition: transform 0.5s;
-  }
-  .icon-link-container[data-visible=true] {
-    transform: translateX(0%);
-    transition: transform 0.5s;
-  }
-  .nav-toggler {
-    display: unset;
-  }
   i[class~=open] {
     display: none;
   }
@@ -612,6 +560,31 @@ strong {
   background-color: white;
 }
 
+.icon-link-container {
+  margin-left: auto;
+  margin-right: 5rem;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+
+.icon-link-container a i:hover {
+  transform: scale(1.5);
+}
+
+.icon-link-toggler {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 3rem;
+  aspect-ratio: 1/3;
+  top: 40%;
+  left: -3rem;
+  z-index: 99;
+  border: none;
+}
+
 .pop-in {
   animation: pop-in 1s ease-out forwards;
 }
@@ -658,6 +631,45 @@ strong {
   }
   100% {
     transform: translateX(150%);
+  }
+}
+@media (max-width: 1095px) {
+  .icon-link-container {
+    gap: 5rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 625px) {
+  #link-menu {
+    gap: 4rem;
+  }
+  #fp-nav {
+    display: none;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .icon-link-container {
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    bottom: 25%;
+    width: 6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  .icon-link-container[data-visible=true] {
+    transform: translateX(0%);
+    transition: transform 0.5s;
+  }
+  .icon-link-toggler {
+    display: unset;
   }
 }
 
