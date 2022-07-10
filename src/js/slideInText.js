@@ -1,5 +1,4 @@
 // Initialize Global timeout and interval for slide-in text
-let slideInTimeoutId;
 let slideInIntervalId;
 
 // Main slide-in text function. Export to main JS file.
