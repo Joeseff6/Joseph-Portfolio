@@ -3,7 +3,7 @@ import setToggler from "./navToggler.js";
 import setupProjectButtons from "./displayProjects.js";
 
 function calculateTopMargin() {
-  let navHeight = document.getElementById("link-menu").clientHeight;
+  const navHeight = document.querySelector("nav").clientHeight;
   document.querySelector("body").style.setProperty("margin-top", `${navHeight}px`);
 }
 
