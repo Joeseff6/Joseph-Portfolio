@@ -3,4 +3,4 @@ My professional portfolio with public access
 
 ##  Deployed Link
 
-**_https://joeseff6.github.io/Joseph-Portfolio/_**
+**_https://josephsoriadev.netlify.app_**
