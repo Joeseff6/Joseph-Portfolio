@@ -65,25 +65,28 @@ function projectTypesSlideIn(projectType, projects) {
 function projectPopIn(project) {
   if (currentProjectName === project.name) return;
   currentProjectName = project.name;
+  const loadProject = () => {
+    spinnerContainer.classList.remove("hide");
+    const projectImage = document.querySelector(".project-img");
+    projectImage.addEventListener("load", () => {
+      spinnerContainer.classList.add("hide");
+      popInContainer.classList.remove("pop-out");
+      popInContainer.classList.add("pop-in");
+    });
+  }
   const popInContainer = document.querySelector(".popIn-container");
+  const spinnerContainer = document.querySelector(".spinner-container");
   let popInContainerClassesArray = Array(...popInContainer.classList);
-  if (
-    !popInContainerClassesArray.includes("pop-in") &&
-    !popInContainerClassesArray.includes("pop-out")
-  ) {
+  if (popInContainerClassesArray.includes("pop-out")) {
     displayProject(project);
-    popInContainer.classList.add("pop-in");
+    loadProject();
   } else if (popInContainerClassesArray.includes("pop-in")) {
     clearTimeout(popInTimeoutId);
     popInContainer.classList.remove("pop-in");
     popInContainer.classList.add("pop-out");
     popInTimeoutId = setTimeout(() => {
       displayProject(project);
-      const projectImage = document.querySelector(".project-img");
-      projectImage.addEventListener("load", () => {
-        popInContainer.classList.add("pop-in");
-        popInContainer.classList.remove("pop-out");
-      });
+      loadProject();
     }, 1000);
   }
 }
