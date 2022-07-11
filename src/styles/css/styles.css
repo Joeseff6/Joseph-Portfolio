@@ -310,6 +310,37 @@ nav * {
   overflow-y: hidden;
 }
 
+.spinner-container {
+  position: relative;
+  width: 7rem;
+  margin: auto;
+  aspect-ratio: 1/1;
+}
+
+.spinner {
+  height: 100%;
+  border: hsla(0deg, 0%, 39%, 0.5) 5px solid;
+  border-top: white 5px solid;
+  border-radius: 50%;
+  animation: spinner 3s linear infinite;
+}
+
+.spinner-container::after {
+  content: "Loading Project";
+  text-align: center;
+  position: absolute;
+  bottom: -100%;
+  font-size: 2.4rem;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .popIn-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
