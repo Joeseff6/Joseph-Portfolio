@@ -4,13 +4,7 @@
     <title>Joseph Soria's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
-      integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
     <script
       src="https://kit.fontawesome.com/f73c74427d.js"
       crossorigin="anonymous"
@@ -209,13 +203,22 @@
         </div>
       </section>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
-      integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./src/js/fullpageConfig.js"></script>
+    <script type="text/javascript" src="./dist/fullpage.js"></script>
+    <script type="text/javascript">
+      const fullPage = new fullpage("#fullpage-wrapper", {
+        licenseKey: "gplv3-license",
+        anchors: ["about-me", "projects", "contact-me"],
+        loopTop: true,
+        loopBottom: true,
+        verticalCentered: false,
+        recordHistory: false,
+        menu: "#link-menu",
+        navigation: true,
+        navigationPosition: "left",
+        navigationTooltips: ["about-me", "projects", "contact-me"],
+        showNavigationTooltips: true,
+      });
+    </script>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

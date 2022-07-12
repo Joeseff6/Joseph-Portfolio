@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Joeseff6/Joseph-Portfolio/issues"
   },
-  "homepage": "https://github.com/Joeseff6/Joseph-Portfolio#readme"
+  "homepage": "https://github.com/Joeseff6/Joseph-Portfolio#readme",
+  "dependencies": {
+    "fullpage.js": "^4.0.9"
+  }
 }
