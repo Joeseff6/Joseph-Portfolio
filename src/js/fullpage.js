@@ -5505,10 +5505,10 @@
     function displayWarnings() {
       var l = getOptions()['li' + 'c' + 'enseK' + 'e' + 'y'];
       var msgStyle = 'font-size: 15px;background:yellow;';
-
+      
       if (!isOK()) {
-        showError('error', 'Fullpage.js requires a `licenseKey` option. Read about it on the following URL:');
-        showError('error', 'https://github.com/alvarotrigo/fullPage.js#options');
+        // showError('error', 'Fullpage.js requires a `licenseKey` option. Read about it on the following URL:');
+        // showError('error', 'https://github.com/alvarotrigo/fullPage.js#options');
       } else if (l && l.length < 20) {
         console.warn('%c This website was made using fullPage.js slider. More info on the following website:', msgStyle);
         console.warn('%c https://alvarotrigo.com/fullPage/', msgStyle);
